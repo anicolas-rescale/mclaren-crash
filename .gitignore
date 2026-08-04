@@ -2,3 +2,6 @@
 .DS_Store
 **/.DS_Store
 scratch/
+
+# local working copy of DOE (canonical: examples/lsdyna-doe.json)
+/lsdyna-doe.json
