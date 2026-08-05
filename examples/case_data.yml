@@ -1,0 +1,21 @@
+# Global DOE knobs for McLaren P35 ES-2 side-pole case (from mclaren_catalog.json).
+# Place as case_data.yml next to case_data.vtp before initialize_dataset,
+# or drop into an already-collected case folder and re-initialize.
+#
+# Generated from examples/mclaren_catalog.json (Comfort / Inb Foam / 1.2mm / 12ms TTF).
+
+doe_matrix: McLaren P35 ES-2 side-pole
+solver: LS-DYNA
+
+door_inner_mm: 1.2
+door_outer_mm: 1.2
+ttf_ms: 12.0
+airbag_E22: 0.0
+airbag_z_up_mm: 0.0
+bracket_cutt: 0.0
+trim_woodfibre: 0.0
+brace_P16: 0.0
+cavity_foam_gl: 0.0
+rail_foam: 0.0
+seat_inb_foam: 1.0
+seat_clubsport: 0.0
