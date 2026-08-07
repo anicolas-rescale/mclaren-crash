@@ -5,73 +5,79 @@
       "source": "mclaren_knobs",
       "knob_name": "door_inner_mm",
       "metadata_name": "door_inner_mm",
-      "help_text": "Door inner thickness (mm) from PSA catalog 'Door Inner'"
+      "help_text": "Parsed from job/parent custom field 'Door Inner' (mm); uses clonedFrom when this job has no Inputs"
     },
     "door_outer_mm": {
       "source": "mclaren_knobs",
       "knob_name": "door_outer_mm",
       "metadata_name": "door_outer_mm",
-      "help_text": "Door outer thickness (mm) from PSA catalog 'Door Outer'"
+      "help_text": "Parsed from job/parent custom field 'Door Outer' (mm)"
     },
     "ttf_ms": {
       "source": "mclaren_knobs",
       "knob_name": "ttf_ms",
       "metadata_name": "ttf_ms",
-      "help_text": "Time-to-fire (ms) from PSA catalog 'TTF'"
+      "help_text": "Parsed from job/parent custom field 'TTF' (ms)"
     },
     "airbag_E22": {
       "source": "mclaren_knobs",
       "knob_name": "airbag_E22",
       "metadata_name": "airbag_E22",
-      "help_text": "1 if Airbag catalog mentions E22"
+      "help_text": "1 if job/parent 'Airbag' mentions E22"
     },
     "airbag_z_up_mm": {
       "source": "mclaren_knobs",
       "knob_name": "airbag_z_up_mm",
       "metadata_name": "airbag_z_up_mm",
-      "help_text": "30 if airbag/bracket catalog has +30 mm up, else 0"
+      "help_text": "30 if job/parent airbag/bracket has +30 mm up, else 0"
     },
     "bracket_cutt": {
       "source": "mclaren_knobs",
       "knob_name": "bracket_cutt",
       "metadata_name": "bracket_cutt",
-      "help_text": "1 if Airbag Bracket catalog mentions cutt/cut"
+      "help_text": "1 if job/parent 'Airbag Bracket' mentions cutt/cut"
     },
     "trim_woodfibre": {
       "source": "mclaren_knobs",
       "knob_name": "trim_woodfibre",
       "metadata_name": "trim_woodfibre",
-      "help_text": "1 if Door Trim catalog mentions woodfibre"
+      "help_text": "1 if job/parent 'Door Trim' mentions woodfibre"
     },
     "brace_P16": {
       "source": "mclaren_knobs",
       "knob_name": "brace_P16",
       "metadata_name": "brace_P16",
-      "help_text": "1 if Door Brace catalog mentions P16"
+      "help_text": "1 if job/parent 'Door Brace' mentions P16"
     },
     "cavity_foam_gl": {
       "source": "mclaren_knobs",
       "knob_name": "cavity_foam_gl",
       "metadata_name": "cavity_foam_gl",
-      "help_text": "Cavity foam gl value (0 if none)"
+      "help_text": "Cavity foam gl from job/parent 'Cavity Foam' (0 if none)"
     },
     "rail_foam": {
       "source": "mclaren_knobs",
       "knob_name": "rail_foam",
       "metadata_name": "rail_foam",
-      "help_text": "1 if Foam Block catalog mentions rail"
+      "help_text": "1 if job/parent 'Foam Block' mentions rail"
     },
     "seat_inb_foam": {
       "source": "mclaren_knobs",
       "knob_name": "seat_inb_foam",
       "metadata_name": "seat_inb_foam",
-      "help_text": "1 if inboard seat foam present"
+      "help_text": "1 if inboard seat foam present on job/parent fields"
     },
     "seat_clubsport": {
       "source": "mclaren_knobs",
       "knob_name": "seat_clubsport",
       "metadata_name": "seat_clubsport",
-      "help_text": "1 if Seat catalog mentions clubsport"
+      "help_text": "1 if job/parent 'Seat' mentions clubsport"
+    },
+    "psa_description": {
+      "source": "custom_field",
+      "catalog_key": "Description",
+      "metadata_name": "psa_description",
+      "help_text": "Raw 'Description' custom field from this job or clonedFrom parent (skipped if absent)"
     }
   },
   "extract": {
