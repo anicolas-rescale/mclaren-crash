@@ -10,7 +10,7 @@ set -euo pipefail
 
 export AUTOMATION_ANALYSIS=ls_dyna
 
-IMG="631046354827.dkr.ecr.eu-central-1.amazonaws.com/deprod-rescale-automation-images-customer:automation-metadata-extractor-0.2.14"
+IMG="631046354827.dkr.ecr.eu-central-1.amazonaws.com/deprod-rescale-automation-images-customer:automation-metadata-extractor-0.2.16"
 STAGE="/enc/tmp/automation-metadata-extractor"
 VENV_PY="$STAGE/python_venv/bin/python"
 LOCK="/enc/tmp/mclaren-extractor.lock"

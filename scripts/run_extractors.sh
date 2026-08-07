@@ -11,7 +11,7 @@ set -euo pipefail
 export AUTOMATION_ANALYSIS=ls_dyna
 
 AI_IMG="631046354827.dkr.ecr.eu-central-1.amazonaws.com/deprod-rescale-automation-images-customer:automation-ai-extractor-0.1.12"
-META_IMG="631046354827.dkr.ecr.eu-central-1.amazonaws.com/deprod-rescale-automation-images-customer:automation-metadata-extractor-0.2.14"
+META_IMG="631046354827.dkr.ecr.eu-central-1.amazonaws.com/deprod-rescale-automation-images-customer:automation-metadata-extractor-0.2.16"
 AI_STAGE="/enc/tmp/automation-ai-extractor"
 META_STAGE="/enc/tmp/automation-metadata-extractor"
 AI_PY="$AI_STAGE/python_venv/bin/python"

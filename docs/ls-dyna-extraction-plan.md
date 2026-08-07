@@ -61,7 +61,8 @@ Hard requirements:
 
 Starter corpus: **23 Comfort sync jobs**. Expansion: full run log (~50 = Comfort + Clubsport).
 
-**Status 2026-08-05:** extractor path proven on Utilities (`hQdwMb`, AI `0.1.12` / Meta `0.2.14`). Work **paused** before batch-extracting the 23. Design-space audit: OFAT / thin for full 12-knob train — see `HANDOFF.md`. Awaiting James Imrie on more sims vs reduced knobs.
+**Status 2026-08-07:** extractor path proven on Utilities (`hQdwMb`, AI `0.1.12` / Meta `0.2.14`). Meta **`0.2.16`** available for re-smoke (`custom_field` / parent-only + DOE scale). Work **paused** on batch-extracting the 23 pending design-space / more-sims call with James Imrie — see `HANDOFF.md`.
+
 
 **Not a Neon port** for physics, but **same rescale-ai on-disk contract** as Neon (`case_data.vtp` + `case_data.stl`, `fea-deform`).
 
