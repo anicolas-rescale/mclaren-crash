@@ -1,0 +1,308 @@
+[auth] base=https://eu.rescale.com folder=HxPaa
+[index] scanning owned extract children…
+[index] 3 parent→child maps
+[queue] eligible=17 skipped=6
+  skip HFuKPb: already_extracted:HLfJXb
+  skip ctowac: already_extracted:gNHKPb
+  skip ifkFPb: exclude:psaf:loadcase:os_es2re_pole32,surrogate:exclude,surrogate:exclude:duplicate-wrong-deck
+  skip MUjFPb: exclude:psaf:loadcase:os_es2re_pole32,surrogate:exclude,surrogate:exclude:configuration-conflict
+  skip EbjaNb: exclude:psaf:loadcase:os_es2re_pole32,surrogate:exclude,surrogate:exclude:duplicate-wrong-deck
+  skip TAfpEc: exclude:surrogate:exclude,surrogate:exclude:incomplete-duplicate
+  run  OQuKPb: P35 Side Pole ES2 Comfort Blocks E41 Airbag 30mm Up
+  run  Qhowac: P35 Side Pole ES2 Comfort Base E22 Blocks Airbag Bracket Cut
+  run  BFuKPb: P35 Side Pole ES2 Comfort Base Blocks Airbag Bracket Cut
+  run  MQuKPb: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl Door Outer 1.1m
+  run  zFuKPb: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl Door Inner 1.3m
+  run  xHdsac: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl Door Inner 1.1m
+  run  gfkFPb: P35 Side Pole ES2 Comfort Base Blocks Door Inner 1.3mm
+  run  ixdsac: P35 Side Pole ES2 Comfort Base Blocks Door Inner 1.1mm
+  run  UUjFPb: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 140gl
+  run  pHdsac: P35 Side Pole ES2 Comfort Base Blocks Brace Al
+  run  afkFPb: P35 Side Pole ES2 Comfort Base Blocks RailFoam
+  run  cxdsac: P35 Side Pole ES2 Comfort Base Blocks Woodfibre Doortrim
+  run  OUjFPb: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl
+  run  YekFPb: P35 Side Pole ES2 Comfort Base E22 Blocks
+  run  axdsac: P35 Side Pole ES2 Comfort Base Blocks 9ms
+  run  vVwVXb: P35_Side_Pole_Es2re_VR1 BaseP Dimple 207c Death
+  run  exteNb: P35_Side_Pole_Es2re_VR1 BaseP 004 b003 Death version 52
+[folder] HLfJXb already in HxPaa
+[folder] gNHKPb already in HxPaa
+[serial] starting 17 jobs one-at-a-time
+[serial] folder target=HxPaa (Side_Pole_Data_Occupant)
+[create] parent=OQuKPb files=333 name='P35 Side Pole ES2 Comfort Blocks E41 Airbag 30mm Up (Extraction Tiles EU)'
+[create] child=raMAac
+[tags] raMAac -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] raMAac already in HxPaa
+[submit] raMAac
+[poll] raMAac status=Pending
+[poll] raMAac status=Queued
+[poll] raMAac status=Validated
+[poll] raMAac status=Executing
+[poll] raMAac status=Completed
+[poll] raMAac terminal=Completed artifacts_ok=True
+[folder] raMAac already in HxPaa
+[create] parent=Qhowac files=328 name='P35 Side Pole ES2 Comfort Base E22 Blocks Airbag Bracket Cut (Extraction Tiles EU)'
+[create] child=SicTPb
+[tags] SicTPb -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] SicTPb already in HxPaa
+[submit] SicTPb
+[poll] SicTPb status=Pending
+[poll] SicTPb status=Validated
+[poll] SicTPb status=Executing
+[poll] SicTPb status=Completed
+[poll] SicTPb terminal=Completed artifacts_ok=True
+[folder] SicTPb already in HxPaa
+[create] parent=BFuKPb files=334 name='P35 Side Pole ES2 Comfort Base Blocks Airbag Bracket Cut (Extraction Tiles EU)'
+[create] child=PUfJXb
+[tags] PUfJXb -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] PUfJXb already in HxPaa
+[submit] PUfJXb
+[poll] PUfJXb status=Pending
+[poll] PUfJXb status=Validated
+[poll] PUfJXb status=Executing
+[poll] PUfJXb status=Completed
+[poll] PUfJXb terminal=Completed artifacts_ok=True
+[folder] PUfJXb already in HxPaa
+[create] parent=MQuKPb files=332 name='P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl Door Outer 1.1mm (Extraction Tiles EU)'
+[create] child=odxaNb
+[tags] odxaNb -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] odxaNb already in HxPaa
+[submit] odxaNb
+[poll] odxaNb status=Pending
+[poll] odxaNb status=Queued
+[poll] odxaNb status=Validated
+[poll] odxaNb status=Executing
+[poll] odxaNb status=Completed
+[poll] odxaNb terminal=Completed artifacts_ok=True
+[folder] odxaNb already in HxPaa
+[create] parent=zFuKPb files=332 name='P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl Door Inner 1.3mm (Extraction Tiles EU)'
+[create] child=EDGeNb
+[tags] EDGeNb -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] EDGeNb already in HxPaa
+[submit] EDGeNb
+[poll] EDGeNb status=Pending
+[poll] EDGeNb status=Validated
+[poll] EDGeNb status=Completed
+[poll] EDGeNb terminal=Completed artifacts_ok=True
+[folder] EDGeNb already in HxPaa
+[create] parent=xHdsac files=332 name='P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl Door Inner 1.1mm (Extraction Tiles EU)'
+[create] child=GRKVXb
+[tags] GRKVXb -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] GRKVXb already in HxPaa
+[submit] GRKVXb
+[poll] GRKVXb status=Pending
+[poll] GRKVXb status=Queued
+[poll] GRKVXb status=Validated
+[poll] GRKVXb status=Executing
+[poll] GRKVXb status=Completed
+[poll] GRKVXb terminal=Completed artifacts_ok=True
+[folder] GRKVXb already in HxPaa
+[create] parent=gfkFPb files=330 name='P35 Side Pole ES2 Comfort Base Blocks Door Inner 1.3mm (Extraction Tiles EU)'
+[create] child=bcLVXb
+[tags] bcLVXb -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] bcLVXb already in HxPaa
+[submit] bcLVXb
+[poll] bcLVXb status=Pending
+[poll] bcLVXb status=Validated
+[poll] bcLVXb status=Executing
+[poll] bcLVXb status=Completed
+[poll] bcLVXb terminal=Completed artifacts_ok=True
+[folder] bcLVXb already in HxPaa
+[create] parent=ixdsac files=330 name='P35 Side Pole ES2 Comfort Base Blocks Door Inner 1.1mm (Extraction Tiles EU)'
+[create] child=JDrsac
+[tags] JDrsac -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] JDrsac already in HxPaa
+[submit] JDrsac
+[poll] JDrsac status=Pending
+[poll] JDrsac status=Completed
+[poll] JDrsac terminal=Completed artifacts_ok=True
+[warn] folder move after complete failed: [Errno 54] Connection reset by peer
+Traceback (most recent call last):
+  File "/Users/anicolas/Documents/rescale-projects/mclaren-crash-pole/scripts/batch_extract_clones.py", line 621, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/Users/anicolas/Documents/rescale-projects/mclaren-crash-pole/scripts/batch_extract_clones.py", line 593, in main
+    child = create_and_submit(
+        client, parent=job, doe_file_id=doe_id, folder_id=folder_id
+    )
+  File "/Users/anicolas/Documents/rescale-projects/mclaren-crash-pole/scripts/batch_extract_clones.py", line 330, in create_and_submit
+    parent_files = list_job_files(client, parent_id)
+  File "/Users/anicolas/Documents/rescale-projects/mclaren-crash-pole/scripts/batch_extract_clones.py", line 186, in list_job_files
+    return list(client.paginate(f"/api/v2/jobs/{job_id}/files/?page_size=100"))
+  File "/Users/anicolas/Documents/rescale-projects/mclaren-crash-pole/scripts/batch_extract_clones.py", line 150, in paginate
+    page = self.get(url)
+  File "/Users/anicolas/Documents/rescale-projects/mclaren-crash-pole/scripts/batch_extract_clones.py", line 139, in get
+    return self._request("GET", path, **kw)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/anicolas/Documents/rescale-projects/mclaren-crash-pole/scripts/batch_extract_clones.py", line 126, in _request
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1325, in do_open
+    r = h.getresponse()
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1459, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 729, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+[auth] base=https://eu.rescale.com folder=HxPaa
+[index] scanning owned extract children…
+[index] 11 parent→child maps
+[queue] eligible=9 skipped=14
+  skip HFuKPb: already_extracted:HLfJXb
+  skip ctowac: already_extracted:gNHKPb
+  skip OQuKPb: already_extracted:raMAac
+  skip Qhowac: already_extracted:SicTPb
+  skip BFuKPb: already_extracted:PUfJXb
+  skip MQuKPb: already_extracted:odxaNb
+  skip zFuKPb: already_extracted:EDGeNb
+  skip xHdsac: already_extracted:GRKVXb
+  skip ifkFPb: exclude:psaf:loadcase:os_es2re_pole32,surrogate:exclude,surrogate:exclude:duplicate-wrong-deck
+  skip gfkFPb: already_extracted:bcLVXb
+  skip ixdsac: already_extracted:JDrsac
+  skip MUjFPb: exclude:psaf:loadcase:os_es2re_pole32,surrogate:exclude,surrogate:exclude:configuration-conflict
+  skip EbjaNb: exclude:psaf:loadcase:os_es2re_pole32,surrogate:exclude,surrogate:exclude:duplicate-wrong-deck
+  skip TAfpEc: exclude:surrogate:exclude,surrogate:exclude:incomplete-duplicate
+  run  UUjFPb: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 140gl
+  run  pHdsac: P35 Side Pole ES2 Comfort Base Blocks Brace Al
+  run  afkFPb: P35 Side Pole ES2 Comfort Base Blocks RailFoam
+  run  cxdsac: P35 Side Pole ES2 Comfort Base Blocks Woodfibre Doortrim
+  run  OUjFPb: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl
+  run  YekFPb: P35 Side Pole ES2 Comfort Base E22 Blocks
+  run  axdsac: P35 Side Pole ES2 Comfort Base Blocks 9ms
+  run  vVwVXb: P35_Side_Pole_Es2re_VR1 BaseP Dimple 207c Death
+  run  exteNb: P35_Side_Pole_Es2re_VR1 BaseP 004 b003 Death version 52
+[folder] HLfJXb already in HxPaa
+[folder] gNHKPb already in HxPaa
+[serial] starting 9 jobs one-at-a-time
+[serial] folder target=HxPaa (Side_Pole_Data_Occupant)
+[create] parent=UUjFPb files=332 name='P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 140gl (Extraction Tiles EU)'
+[create] child=KdFFQc
+[tags] KdFFQc -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] KdFFQc already in HxPaa
+[submit] KdFFQc
+[poll] KdFFQc status=Pending
+[poll] KdFFQc status=Validated
+[poll] KdFFQc status=Executing
+[poll] KdFFQc status=Completed
+[poll] KdFFQc terminal=Completed artifacts_ok=True
+[folder] KdFFQc already in HxPaa
+[create] parent=pHdsac files=330 name='P35 Side Pole ES2 Comfort Base Blocks Brace Al (Extraction Tiles EU)'
+[create] child=UdFFQc
+[tags] UdFFQc -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] UdFFQc already in HxPaa
+[submit] UdFFQc
+[poll] UdFFQc status=Pending
+[poll] UdFFQc status=Validated
+[poll] UdFFQc status=Executing
+[poll] UdFFQc status=Completed
+[poll] UdFFQc terminal=Completed artifacts_ok=True
+[folder] UdFFQc already in HxPaa
+[create] parent=afkFPb files=330 name='P35 Side Pole ES2 Comfort Base Blocks RailFoam (Extraction Tiles EU)'
+[create] child=HPPKQc
+[tags] HPPKQc -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] HPPKQc already in HxPaa
+[submit] HPPKQc
+[poll] HPPKQc status=Pending
+[poll] HPPKQc status=Queued
+[poll] HPPKQc status=Validated
+[poll] HPPKQc status=Executing
+[poll] HPPKQc status=Completed
+[poll] HPPKQc terminal=Completed artifacts_ok=True
+[folder] HPPKQc already in HxPaa
+[create] parent=cxdsac files=330 name='P35 Side Pole ES2 Comfort Base Blocks Woodfibre Doortrim (Extraction Tiles EU)'
+[create] child=aYQpTc
+[tags] aYQpTc -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] aYQpTc already in HxPaa
+[submit] aYQpTc
+[poll] aYQpTc status=Pending
+[poll] aYQpTc status=Validated
+[poll] aYQpTc status=Executing
+[poll] aYQpTc status=Completed
+[poll] aYQpTc terminal=Completed artifacts_ok=True
+[folder] aYQpTc already in HxPaa
+[create] parent=OUjFPb files=332 name='P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl (Extraction Tiles EU)'
+[create] child=WvXCHc
+[tags] WvXCHc -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] WvXCHc already in HxPaa
+[submit] WvXCHc
+[poll] WvXCHc status=Pending
+[poll] WvXCHc status=Validated
+[poll] WvXCHc status=Executing
+[poll] WvXCHc status=Completed
+[poll] WvXCHc terminal=Completed artifacts_ok=True
+[folder] WvXCHc already in HxPaa
+[create] parent=YekFPb files=329 name='P35 Side Pole ES2 Comfort Base E22 Blocks (Extraction Tiles EU)'
+[create] child=kDBQHc
+[tags] kDBQHc -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] kDBQHc already in HxPaa
+[submit] kDBQHc
+[poll] kDBQHc status=Pending
+[poll] kDBQHc status=Validated
+[poll] kDBQHc status=Executing
+[poll] kDBQHc status=Completed
+[poll] kDBQHc terminal=Completed artifacts_ok=True
+[folder] kDBQHc already in HxPaa
+[create] parent=axdsac files=330 name='P35 Side Pole ES2 Comfort Base Blocks 9ms (Extraction Tiles EU)'
+[create] child=fcWXEc
+[tags] fcWXEc -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] fcWXEc already in HxPaa
+[submit] fcWXEc
+[poll] fcWXEc status=Pending
+[poll] fcWXEc status=Validated
+[poll] fcWXEc status=Executing
+[poll] fcWXEc status=Completed
+[poll] fcWXEc terminal=Completed artifacts_ok=True
+[folder] fcWXEc already in HxPaa
+[create] parent=vVwVXb files=274 name='P35_Side_Pole_Es2re_VR1 BaseP Dimple 207c Death (Extraction Tiles EU)'
+[create] child=oAZOQc
+[tags] oAZOQc -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] oAZOQc already in HxPaa
+[submit] oAZOQc
+[poll] oAZOQc status=Pending
+[poll] oAZOQc status=Validated
+[poll] oAZOQc status=Executing
+[poll] oAZOQc status=Completed
+[poll] oAZOQc terminal=Completed artifacts_ok=True
+[folder] oAZOQc already in HxPaa
+[create] parent=exteNb files=272 name='P35_Side_Pole_Es2re_VR1 BaseP 004 b003 Death version 52 (Extraction Tiles EU)'
+[create] child=wAZOQc
+[tags] wAZOQc -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[folder] wAZOQc already in HxPaa
+[submit] wAZOQc
+[poll] wAZOQc status=Pending
+[poll] wAZOQc status=Queued
+[poll] wAZOQc status=Validated
+[poll] wAZOQc status=Executing
+[poll] wAZOQc status=Completed
+[poll] wAZOQc terminal=Completed artifacts_ok=True
+[folder] wAZOQc already in HxPaa
+[serial] done failures=0

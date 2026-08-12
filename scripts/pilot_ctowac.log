@@ -1,0 +1,48 @@
+[auth] base=https://eu.rescale.com
+[index] scanning owned extract children…
+[index] 2 parent→child maps
+[queue] eligible=18 skipped=5
+  skip HFuKPb: already_extracted:HLfJXb
+  skip ifkFPb: exclude:psaf:loadcase:os_es2re_pole32,surrogate:exclude,surrogate:exclude:duplicate-wrong-deck
+  skip MUjFPb: exclude:psaf:loadcase:os_es2re_pole32,surrogate:exclude,surrogate:exclude:configuration-conflict
+  skip EbjaNb: exclude:psaf:loadcase:os_es2re_pole32,surrogate:exclude,surrogate:exclude:duplicate-wrong-deck
+  skip TAfpEc: exclude:surrogate:exclude,surrogate:exclude:incomplete-duplicate
+  run  ctowac: P35 Side Pole ES2 Comfort Base E22 Blocks  Airbag 30mm Up
+  run  OQuKPb: P35 Side Pole ES2 Comfort Blocks E41 Airbag 30mm Up
+  run  Qhowac: P35 Side Pole ES2 Comfort Base E22 Blocks Airbag Bracket Cut
+  run  BFuKPb: P35 Side Pole ES2 Comfort Base Blocks Airbag Bracket Cut
+  run  MQuKPb: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl Door Outer 1.1m
+  run  zFuKPb: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl Door Inner 1.3m
+  run  xHdsac: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl Door Inner 1.1m
+  run  gfkFPb: P35 Side Pole ES2 Comfort Base Blocks Door Inner 1.3mm
+  run  ixdsac: P35 Side Pole ES2 Comfort Base Blocks Door Inner 1.1mm
+  run  UUjFPb: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 140gl
+  run  pHdsac: P35 Side Pole ES2 Comfort Base Blocks Brace Al
+  run  afkFPb: P35 Side Pole ES2 Comfort Base Blocks RailFoam
+  run  cxdsac: P35 Side Pole ES2 Comfort Base Blocks Woodfibre Doortrim
+  run  OUjFPb: P35 Side Pole ES2 Comfort Base Blocks Cavity Foam 60gl
+  run  YekFPb: P35 Side Pole ES2 Comfort Base E22 Blocks
+  run  axdsac: P35 Side Pole ES2 Comfort Base Blocks 9ms
+  run  vVwVXb: P35_Side_Pole_Es2re_VR1 BaseP Dimple 207c Death
+  run  exteNb: P35_Side_Pole_Es2re_VR1 BaseP 004 b003 Death version 52
+[doe] uploading /Users/anicolas/Documents/rescale-projects/mclaren-crash-pole/examples/lsdyna-doe.json
+[doe] file_id=catYzo
+[create] parent=ctowac files=331 name='P35 Side Pole ES2 Comfort Base E22 Blocks  Airbag 30mm Up (Extraction Tiles EU)'
+[create] child=gNHKPb
+[tags] gNHKPb -> [{'name': 'crashPostProcess', 'normalizedName': 'crashpostprocess'}, {'name': 'psaf:loadcase:os_es2re_pole32', 'normalizedName': 'psaf:loadcase:oses2repole32'}]
+[submit] gNHKPb
+[poll] gNHKPb status=Pending
+[poll] gNHKPb status=Validated
+[poll] gNHKPb status=Executing
+[poll] gNHKPb status=Completed
+[poll] gNHKPb terminal=Completed artifacts_ok=True
+
+============================================================
+PILOT COMPLETE — STOPPING for human review
+  parent : ctowac
+  child  : gNHKPb
+  status : Completed
+  artifacts_ok: True
+  url    : https://eu.rescale.com/jobs/gNHKPb/
+Do NOT run --serial until Andrea gives go-ahead.
+============================================================
