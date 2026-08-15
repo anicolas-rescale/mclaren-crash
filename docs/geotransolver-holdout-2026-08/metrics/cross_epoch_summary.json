@@ -1,0 +1,100 @@
+{
+  "milestones": [
+    {
+      "epoch": 20,
+      "train_probe_mse": 6.079849056552938,
+      "holdout_probe_mse": 4.40817966685016,
+      "train_probe_rel_l2": 177035136694.12296,
+      "holdout_probe_rel_l2": 173178405511.2502,
+      "train_disp_rmse_mm": 24548.57034328174,
+      "holdout_disp_rmse_mm": 27665.099902201175,
+      "train_disp_last_rel_l2": 0.21876377669362926,
+      "holdout_disp_last_rel_l2": 0.31787402592914954,
+      "tb_loss": {
+        "epoch": 20,
+        "value": 0.27803415060043335
+      },
+      "tb_disp": {
+        "epoch": 20,
+        "value": 0.010182864964008331
+      },
+      "tb_probe": {
+        "epoch": 20,
+        "value": 0.2678512930870056
+      }
+    },
+    {
+      "epoch": 50,
+      "train_probe_mse": 4.13561824801549,
+      "holdout_probe_mse": 3.845182383507313,
+      "train_probe_rel_l2": 173161659159.3851,
+      "holdout_probe_rel_l2": 214187311288.9045,
+      "train_disp_rmse_mm": 24398.874871646804,
+      "holdout_disp_rmse_mm": 27858.68316885898,
+      "train_disp_last_rel_l2": 0.1873601561514472,
+      "holdout_disp_last_rel_l2": 0.2939226551072011,
+      "tb_loss": {
+        "epoch": 50,
+        "value": 0.1570250242948532
+      },
+      "tb_disp": {
+        "epoch": 50,
+        "value": 0.00788993388414383
+      },
+      "tb_probe": {
+        "epoch": 50,
+        "value": 0.14913509786128998
+      }
+    },
+    {
+      "epoch": 100,
+      "train_probe_mse": 2.3456936655817837,
+      "holdout_probe_mse": 3.0356083941714482,
+      "train_probe_rel_l2": 177912749108.95135,
+      "holdout_probe_rel_l2": 227559986877.90106,
+      "train_disp_rmse_mm": 19431.316484763833,
+      "holdout_disp_rmse_mm": 23082.028243117715,
+      "train_disp_last_rel_l2": 0.18110781076597746,
+      "holdout_disp_last_rel_l2": 0.2901970326146808,
+      "tb_loss": {
+        "epoch": 100,
+        "value": 0.10836082696914673
+      },
+      "tb_disp": {
+        "epoch": 100,
+        "value": 0.006497983820736408
+      },
+      "tb_probe": {
+        "epoch": 100,
+        "value": 0.1018628478050232
+      }
+    },
+    {
+      "epoch": 200,
+      "train_probe_mse": 1.157387977361545,
+      "holdout_probe_mse": 3.01467543176563,
+      "train_probe_rel_l2": 101815748133.70596,
+      "holdout_probe_rel_l2": 98144668223.4393,
+      "train_disp_rmse_mm": 16347.768650665459,
+      "holdout_disp_rmse_mm": 20564.878646634763,
+      "train_disp_last_rel_l2": 0.16503704553214021,
+      "holdout_disp_last_rel_l2": 0.28169989230344744,
+      "tb_loss": {
+        "epoch": 199,
+        "value": 0.05238887295126915
+      },
+      "tb_disp": {
+        "epoch": 199,
+        "value": 0.004716206807643175
+      },
+      "tb_probe": {
+        "epoch": 199,
+        "value": 0.04767266660928726
+      }
+    }
+  ],
+  "holdouts": [
+    "case9_bcLVXb",
+    "case3_WvXCHc"
+  ]
+}

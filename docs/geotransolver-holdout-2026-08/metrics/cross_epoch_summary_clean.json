@@ -1,0 +1,125 @@
+{
+  "milestones": [
+    {
+      "epoch": 20,
+      "tb_loss": 0.27803415060043335,
+      "tb_disp": 0.010182864964008331,
+      "tb_probe": 0.2678512930870056,
+      "train_probe_mse": 6.079849056552938,
+      "holdout_probe_mse": 4.40817966685016,
+      "train_probe_rmse": 1.5156201851009885,
+      "holdout_probe_rmse": 1.2798137620916936,
+      "train_disp_rmse_mm": 24.54857034328174,
+      "holdout_disp_rmse_mm": 27.665099902201177,
+      "train_disp_last_rel_l2": 0.21876377669362926,
+      "holdout_disp_last_rel_l2": 0.31787402592914954,
+      "holdout_cases": [
+        {
+          "case": "case3_WvXCHc",
+          "probe_mse": 4.336722521518172,
+          "disp_rmse_mm": 22.392175943363956,
+          "disp_last_rel_l2": 0.19875366371149586
+        },
+        {
+          "case": "case9_bcLVXb",
+          "probe_mse": 4.479636812182147,
+          "disp_rmse_mm": 32.938023861038396,
+          "disp_last_rel_l2": 0.43699438814680325
+        }
+      ],
+      "gap_probe_mse": 0.7250475506622929
+    },
+    {
+      "epoch": 50,
+      "tb_loss": 0.1570250242948532,
+      "tb_disp": 0.00788993388414383,
+      "tb_probe": 0.14913509786128998,
+      "train_probe_mse": 4.13561824801549,
+      "holdout_probe_mse": 3.845182383507313,
+      "train_probe_rmse": 1.2560631844925296,
+      "holdout_probe_rmse": 1.2330422339599227,
+      "train_disp_rmse_mm": 24.398874871646804,
+      "holdout_disp_rmse_mm": 27.85868316885898,
+      "train_disp_last_rel_l2": 0.1873601561514472,
+      "holdout_disp_last_rel_l2": 0.2939226551072011,
+      "holdout_cases": [
+        {
+          "case": "case3_WvXCHc",
+          "probe_mse": 4.1310279357960455,
+          "disp_rmse_mm": 22.58559681428642,
+          "disp_last_rel_l2": 0.16838299303815632
+        },
+        {
+          "case": "case9_bcLVXb",
+          "probe_mse": 3.5593368312185802,
+          "disp_rmse_mm": 33.131769523431544,
+          "disp_last_rel_l2": 0.4194623171762459
+        }
+      ],
+      "gap_probe_mse": 0.9297720807166994
+    },
+    {
+      "epoch": 100,
+      "tb_loss": 0.10836082696914673,
+      "tb_disp": 0.006497983820736408,
+      "tb_probe": 0.1018628478050232,
+      "train_probe_mse": 2.3456936655817837,
+      "holdout_probe_mse": 3.0356083941714482,
+      "train_probe_rmse": 0.9224974196603741,
+      "holdout_probe_rmse": 1.0536559544800275,
+      "train_disp_rmse_mm": 19.43131648476383,
+      "holdout_disp_rmse_mm": 23.082028243117716,
+      "train_disp_last_rel_l2": 0.18110781076597746,
+      "holdout_disp_last_rel_l2": 0.2901970326146808,
+      "holdout_cases": [
+        {
+          "case": "case3_WvXCHc",
+          "probe_mse": 2.3418972531889293,
+          "disp_rmse_mm": 17.735156484891636,
+          "disp_last_rel_l2": 0.16319096660862367
+        },
+        {
+          "case": "case9_bcLVXb",
+          "probe_mse": 3.7293195351539667,
+          "disp_rmse_mm": 28.428900001343795,
+          "disp_last_rel_l2": 0.417203098620738
+        }
+      ],
+      "gap_probe_mse": 1.2941197048501005
+    },
+    {
+      "epoch": 200,
+      "tb_loss": 0.05238887295126915,
+      "tb_disp": 0.004716206807643175,
+      "tb_probe": 0.04767266660928726,
+      "train_probe_mse": 1.157387977361545,
+      "holdout_probe_mse": 3.01467543176563,
+      "train_probe_rmse": 0.5988674133111405,
+      "holdout_probe_rmse": 1.0002598370785285,
+      "train_disp_rmse_mm": 16.347768650665458,
+      "holdout_disp_rmse_mm": 20.564878646634764,
+      "train_disp_last_rel_l2": 0.16503704553214021,
+      "holdout_disp_last_rel_l2": 0.28169989230344744,
+      "holdout_cases": [
+        {
+          "case": "case3_WvXCHc",
+          "probe_mse": 2.1481722837637935,
+          "disp_rmse_mm": 14.786096121415001,
+          "disp_last_rel_l2": 0.14865112622556984
+        },
+        {
+          "case": "case9_bcLVXb",
+          "probe_mse": 3.881178579767466,
+          "disp_rmse_mm": 26.343661171854524,
+          "disp_last_rel_l2": 0.414748658381325
+        }
+      ],
+      "gap_probe_mse": 2.6047232999932097
+    }
+  ],
+  "holdouts": [
+    "case9_bcLVXb",
+    "case3_WvXCHc"
+  ],
+  "disp_units": "mm (VTP native; mag~O(100-2000))"
+}

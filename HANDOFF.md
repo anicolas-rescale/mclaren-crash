@@ -1,6 +1,9 @@
 # Handoff — McLaren ES-2 side-pole crash extractors (EU Utilities)
 
-**Updated:** 2026-08-12  
+**Updated:** 2026-08-14  
+
+> **Variables UI OOM (Aug 2026) — DONE.** Merged [#1186](https://github.com/rescale/rescale-ai/pull/1186). Full write-up: [`docs/handoff-2026-08-variables-ui-oom-fix.md`](./docs/handoff-2026-08-variables-ui-oom-fix.md). Next McLaren AI track: GeoTransolver global TS (`docs/geotransolver-global-ts-implementation-plan.md`).
+
 **Local path:** `/Users/anicolas/Documents/rescale-projects/mclaren-crash-pole`  
 **Remote:** https://github.com/anicolas-rescale/mclaren-crash  
 **Gold smoke job:** **`HLfJXb`** (EU) — AI `0.1.13` + Metadata `0.2.17` (stock tile Commands, no bash helpers)  
@@ -238,7 +241,7 @@ OFAT around Comfort baseline; thin for full 12-knob train. Details in `docs/ls-d
 2. James / McLaren: more sims vs reduced knobs before claiming 12-D surrogate.
 3. Optional: backfill Door/TTF on `exteNb` from run-log `eDoBSc` row, re-run metadata on `wAZOQc` (or patch yml) if you want 19.
 4. Optional: fix `trim_woodfibre` for `wood fibre`.
-5. Transient probe-channel train/export confirm.
+5. **GeoTransolver joint outputs** — plan [`docs/geotransolver-global-ts-plan.md`](docs/geotransolver-global-ts-plan.md). **Phase 0–1 done:** branch `feat/transient-global-ts-outputs`, schema [`docs/probe-global-schema.md`](docs/probe-global-schema.md), converter `scripts/convert_probes_to_global_ts.py` (smoke `scratch/HFuKPb` → `[42, 37]`). Next: Phase 2 implementation on that branch.
 
 ## Known follow-ups
 
@@ -251,8 +254,8 @@ OFAT around Comfort baseline; thin for full 12-knob train. Details in `docs/ls-d
 - [ ] Collect / init / validate multi-case (18)
 - [ ] James: OFAT vs more sims
 - [ ] Optional backfill `exteNb` / `wAZOQc` Door/TTF
-- [ ] Fix `trim_woodfibre` / `wood fibre`
-- [ ] Transient probe-channel train/export confirm
+- [x] Fix `trim_woodfibre` / `wood fibre` — manual flip on dataset `mclaren-p35-side-pole-19` case `case4_aYQpTc` (extract `aYQpTc`) 0→1; catalog parse still broken upstream
+- [ ] GeoTransolver nodal + global-TS probes — [`docs/geotransolver-global-ts-plan.md`](docs/geotransolver-global-ts-plan.md)
 
 ## Key job IDs (EU)
 

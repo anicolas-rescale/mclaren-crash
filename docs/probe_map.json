@@ -1,0 +1,81 @@
+{
+  "dummy": "ES-2re",
+  "load_case": "os_es2re_pole32",
+  "probes": {
+    "head": {
+      "role": "acceleration",
+      "node_id": 76010019,
+      "legend": "acceleration head",
+      "psa_csv_prefix": "head_acceleration"
+    },
+    "t1": {
+      "role": "acceleration",
+      "node_id": 76010461,
+      "legend": "global T1 output",
+      "psa_csv_prefix": "spine_t1_acceleration"
+    },
+    "t12": {
+      "role": "acceleration",
+      "node_id": 76010264,
+      "legend": "global T12 output",
+      "psa_csv_prefix": "spine_t12_acceleration"
+    },
+    "pelvis": {
+      "role": "acceleration",
+      "node_id": 76010013,
+      "legend": "acceleration pelvis",
+      "psa_csv_prefix": "pelvis_acceleration"
+    },
+    "upper_rib": {
+      "role": "rib_defl",
+      "deforc_id": 76010500,
+      "legend": "upper rib deflection",
+      "psa_csv": "upper_rib_deflection__mm.csv"
+    },
+    "middle_rib": {
+      "role": "rib_defl",
+      "deforc_id": 76010501,
+      "legend": "middle rib deflection",
+      "psa_csv": "middle_rib_deflection__mm.csv"
+    },
+    "lower_rib": {
+      "role": "rib_defl",
+      "deforc_id": 76010502,
+      "legend": "lower rib deflection",
+      "psa_csv": "lower_rib_deflection__mm.csv"
+    },
+    "neck_upper": {
+      "role": "force_moment",
+      "elout_beam_id": 76010001,
+      "legend": "upper neck load cell",
+      "psa_force_prefix": "neck_upper_force",
+      "psa_moment_prefix": "neck_upper_moment"
+    },
+    "pubic": {
+      "role": "force_moment",
+      "elout_beam_id": 76010000,
+      "legend": "pubic symphysis load cell",
+      "psa_force_prefix": "pubic_force"
+    },
+    "shoulder_left": {
+      "role": "force_moment",
+      "elout_beam_id": 76010002,
+      "legend": "clavicle load cell",
+      "psa_force_prefix": "shoulder_left_force"
+    },
+    "backplate": {
+      "role": "force_moment",
+      "elout_beam_id": 76010004,
+      "legend": "back plate load cell",
+      "psa_force_prefix": "backplate_force",
+      "psa_moment_prefix": "backplate_moment"
+    },
+    "t12_loadcell": {
+      "role": "force_moment",
+      "elout_beam_id": 76010006,
+      "legend": "t12 load cell",
+      "psa_force_prefix": "spine_t12_force",
+      "psa_moment_prefix": "spine_t12_moment"
+    }
+  }
+}
