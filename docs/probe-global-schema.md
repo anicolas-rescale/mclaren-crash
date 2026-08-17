@@ -12,16 +12,16 @@
 | `t1` | acceleration | `t1_acceleration_{x,y,z}` |
 | `t12` | acceleration | `t12_acceleration_{x,y,z}` |
 | `pelvis` | acceleration | `pelvis_acceleration_{x,y,z}` |
-| `upper_rib` | rib_defl | `upper_rib_defl` |
-| `middle_rib` | rib_defl | `middle_rib_defl` |
-| `lower_rib` | rib_defl | `lower_rib_defl` |
+| `upper_rib` | rib_defl | `upper_rib_defl`, `upper_rib_viscous_criterion` |
+| `middle_rib` | rib_defl | `middle_rib_defl`, `middle_rib_viscous_criterion` |
+| `lower_rib` | rib_defl | `lower_rib_defl`, `lower_rib_viscous_criterion` |
 | `neck_upper` | force_moment | `neck_upper_force_{x,y,z}`, `neck_upper_moment_{x,y,z}` |
 | `pubic` | force_moment | `pubic_force_{x,y,z}` |
 | `shoulder_left` | force_moment | `shoulder_left_force_{x,y,z}` |
 | `backplate` | force_moment | `backplate_force_{x,y,z}`, `backplate_moment_{x,y,z}` |
 | `t12_loadcell` | force_moment | `t12_loadcell_force_{x,y,z}`, `t12_loadcell_moment_{x,y,z}` |
 
-Missing PSA axes are omitted (not zero-filled) so `G_out` can be &lt; max. Typical full set ≈ **39** scalars if every axis exists.
+Missing PSA axes are omitted (not zero-filled) so `G_out` can be &lt; max. Max component set ≈ **42** (39 axes/defl + 3 rib VC) when every file exists; `*_resultant*` PSA channels are **not** extracted (derivable from xyz). Typical `HFuKPb`-class jobs emit **~40** (missing `t12_loadcell` Fz + Mz).
 
 Optional documentation key (not a train target):
 
@@ -61,10 +61,26 @@ Platform Transient today only understands node `_t*` outputs; Phase 2 teaches it
 
 `len(timeseries[<key>]) == T` where `T` = number of `displacement_t*` arrays on the case VTP. Converter resamples PSA CSVs onto those times (same interp as the AI extractor).
 
-## Converter
+## Converter (legacy / offline)
 
 ```bash
 # from mclaren-crash-pole, with pyvista available
 python scripts/convert_probes_to_global_ts.py scratch/HFuKPb
 python scripts/verify_probe_globals.py scratch/HFuKPb
 ```
+
+**Preferred (Aug 2026+):** declare channels in job-submitted `lsdyna-doe.json`:
+
+```json
+"probes": {
+  "head_acceleration_y": { "csv": "head_acceleration_y__g.csv" },
+  "sensor_uy": { "node_id": 12345, "field": "displacement", "component": "y" }
+},
+"extract": { "timeseries": ["*"] }
+```
+
+CSV wins when present; otherwise AI samples the mesh at `node_id`. Missing sources are omitted. See `examples/mclaren-lsdyna-doe.json` / `mclaren-crash-pole/examples/lsdyna-doe.json`.
+
+Legacy: job-local `probe_map.json` for sparse nodal overlays only (no bundled auto-detect).
+
+See branches `feat/probe-global-timeseries` on `automation-ai-extractor` and `automation-metadata-extractor`.

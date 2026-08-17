@@ -54,14 +54,14 @@ Missing / wrong nodes become **explicit zero series**, then we train on them.
 ### Monday fix order (Andy)
 
 1. **Stop** treating holdout/probe MSE as scorecard until labels are clean.
-2. Dig original LS-DYNA / PSA (or re-extract with `EMIT_PROBE_BOOKKEEPING=1` / `NODE_ID`) — confirm which cases truly lack channels vs extract gaps.
-3. Fix mapping:
-   - Prefer **PSA CSV** path in the converter when present, **or**
-   - Role-scoped matching (rib only among `rib_defl` nonzero nodes; force among `force`; etc.), **or**
-   - Stable `NODE_ID` / `PROBE_CODE` on every VTP.
-4. Drop always-zero channels from `outvar_ts_keys` until they exist in extract.
-5. Re-write `timeseries:` into `case_data.yml` (keep backup under `cases/_yml_backup_pre_probe_globals/`), copy into preprocessed tree, **retrain** — old checkpoints are poisoned on those channels.
-6. Add a **verify** gate: fail/warn if any trained channel is flat-zero on a case that has nonzero sparse signal for that role (extend `scripts/verify_probe_globals.py`).
+2. Dig original LS-DYNA / PSA (or re-extract) — confirm which cases truly lack channels vs extract gaps.
+3. **Extractor fix (in progress on branches `feat/probe-global-timeseries`):**
+   - **AI** (`automation-ai-extractor`): PSA → `case_data.yml` `timeseries:` directly; sparse nodal overlays optional via `probe_map.json` → `extract.probe_nodal` (bundled McLaren map defaults **globals on / nodal off**).
+   - **Metadata** (`automation-metadata-extractor`): DOE `extract.timeseries: ["*"]`; preserves AI-written timeseries when rewriting knobs.
+4. Re-extract McLaren cases (or re-run tiles on Utilities clones) → verify no flat-zero labels where PSA has signal.
+5. Drop always-missing channels from train `outvar_ts_keys` until PSA has them.
+6. Retrain holdout only **after** labels are clean (old ckpts poisoned).
+7. Keep `scripts/verify_probe_globals.py` as a gate (fail if YAML flat-zero while PSA CSV is nonzero).
 
 Until then: displacement plumbing + “alive” probe channels (head/pelvis Y-acc, middle/lower ribs, etc.) are still useful for architecture review; **flat plots are data bugs**.
 

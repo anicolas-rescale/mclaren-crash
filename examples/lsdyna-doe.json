@@ -81,7 +81,144 @@
     }
   },
   "extract": {
-    "context": ["doe_matrix", "solver", "automation_version"],
-    "findings": ["*"]
+    "context": [
+      "doe_matrix",
+      "solver",
+      "automation_version"
+    ],
+    "findings": [
+      "*"
+    ],
+    "timeseries": [
+      "*"
+    ]
+  },
+  "probes": {
+    "head_acceleration_x": {
+      "csv": "head_acceleration_x__g.csv"
+    },
+    "head_acceleration_y": {
+      "csv": "head_acceleration_y__g.csv"
+    },
+    "head_acceleration_z": {
+      "csv": "head_acceleration_z__g.csv"
+    },
+    "t1_acceleration_x": {
+      "csv": "spine_t1_acceleration_x__g.csv"
+    },
+    "t1_acceleration_y": {
+      "csv": "spine_t1_acceleration_y__g.csv"
+    },
+    "t1_acceleration_z": {
+      "csv": "spine_t1_acceleration_z__g.csv"
+    },
+    "t12_acceleration_x": {
+      "csv": "spine_t12_acceleration_x__g.csv"
+    },
+    "t12_acceleration_y": {
+      "csv": "spine_t12_acceleration_y__g.csv"
+    },
+    "t12_acceleration_z": {
+      "csv": "spine_t12_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "csv": "pelvis_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "csv": "pelvis_acceleration_y__g.csv"
+    },
+    "pelvis_acceleration_z": {
+      "csv": "pelvis_acceleration_z__g.csv"
+    },
+    "upper_rib_defl": {
+      "csv": "upper_rib_deflection__mm.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "csv": "upper_rib_viscous_criterion__m_s.csv"
+    },
+    "middle_rib_defl": {
+      "csv": "middle_rib_deflection__mm.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "csv": "middle_rib_viscous_criterion__m_s.csv"
+    },
+    "lower_rib_defl": {
+      "csv": "lower_rib_deflection__mm.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "csv": "lower_rib_viscous_criterion__m_s.csv"
+    },
+    "neck_upper_force_x": {
+      "csv": "neck_upper_force_x__kN.csv"
+    },
+    "neck_upper_force_y": {
+      "csv": "neck_upper_force_y__kN.csv"
+    },
+    "neck_upper_force_z": {
+      "csv": "neck_upper_force_z__kN.csv"
+    },
+    "neck_upper_moment_x": {
+      "csv": "neck_upper_moment_x__Nm.csv"
+    },
+    "neck_upper_moment_y": {
+      "csv": "neck_upper_moment_y__Nm.csv"
+    },
+    "neck_upper_moment_z": {
+      "csv": "neck_upper_moment_z__Nm.csv"
+    },
+    "backplate_force_x": {
+      "csv": "backplate_force_x__kN.csv"
+    },
+    "backplate_force_y": {
+      "csv": "backplate_force_y__kN.csv"
+    },
+    "backplate_force_z": {
+      "csv": "backplate_force_z__kN.csv"
+    },
+    "backplate_moment_x": {
+      "csv": "backplate_moment_x__Nm.csv"
+    },
+    "backplate_moment_y": {
+      "csv": "backplate_moment_y__Nm.csv"
+    },
+    "backplate_moment_z": {
+      "csv": "backplate_moment_z__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "csv": "spine_t12_force_x__kN.csv"
+    },
+    "t12_loadcell_force_y": {
+      "csv": "spine_t12_force_y__kN.csv"
+    },
+    "t12_loadcell_force_z": {
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "csv": "spine_t12_moment_x__Nm.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "csv": "spine_t12_moment_y__Nm.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "pubic_force_x": {
+      "csv": "pubic_force_x__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "csv": "shoulder_left_force_x__kN.csv"
+    },
+    "pubic_force_y": {
+      "csv": "pubic_force_y__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "csv": "shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_z": {
+      "csv": "pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "csv": "shoulder_left_force_z__kN.csv"
+    }
   }
 }
