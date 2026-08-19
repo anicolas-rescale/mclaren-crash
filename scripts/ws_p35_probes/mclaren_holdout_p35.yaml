@@ -1,0 +1,110 @@
+# McLaren P35 18-case holdout (KwXUX / dWNQX), clean probe globals, GeoT + global TS head.
+# Paths for workstation cXBNn. prepare_train.py fills raw_data_dir after decimate.
+
+hydra:
+  job:
+    chdir: True
+  run:
+    dir: ${model_dir}
+
+defaults:
+  - reader: vtp
+  - datapipe: point_cloud
+  - model: geotransolver_time_conditional
+  - training: default
+  - inference: default
+  - _self_
+
+model_dir: /enc/udeprod_cXBNn/mclaren_holdout_c9_c3/models/geo-global-ts/versions/0
+
+paths:
+  artifacts: ${model_dir}/artifacts
+  evaluation: ${model_dir}/evaluation
+  models: ${model_dir}/models
+  logs: ${model_dir}/logs
+  statistics: ${model_dir}/statistics
+ckpt_path: ${paths.models}/checkpoints
+logs_path: ${paths.logs}
+statistics_path: ${paths.statistics}
+training_csv: ${paths.artifacts}/training.csv
+validation_csv: ${paths.artifacts}/validation.csv
+test_csv: ${paths.artifacts}/test.csv
+evaluation_path: ${paths.evaluation}
+
+training:
+  raw_data_dir: PLACEHOLDER_PREPROCESSED
+  raw_data_dir_validation: PLACEHOLDER_PREPROCESSED
+  global_features_filepath: null
+  optimizer: adam
+  epochs: 200
+  amp: true
+  num_dataloader_workers: 1
+  num_time_steps: 41
+  num_training_samples: 16
+  num_validation_samples: 0
+  start_lr: 0.0001
+  global_loss_weight: 1.0
+  save_checkpoint_freq: 10
+
+inference:
+  raw_data_dir_test: PLACEHOLDER_PREPROCESSED
+
+datapipe:
+  static_features: []
+  dynamic_features: []
+  dynamic_targets: []
+  global_features:
+    - door_inner_mm
+    - door_outer_mm
+    - ttf_ms
+    - airbag_E22
+    - airbag_z_up_mm
+    - bracket_cutt
+    - brace_P16
+    - cavity_foam_gl
+    - rail_foam
+    - seat_inb_foam
+  outvar_ts_keys:
+    - head_acceleration_x
+    - head_acceleration_y
+    - head_acceleration_z
+    - neck_upper_force_x
+    - neck_upper_force_y
+    - neck_upper_force_z
+    - neck_upper_moment_x
+    - neck_upper_moment_y
+    - neck_upper_moment_z
+    - t1_acceleration_x
+    - t1_acceleration_y
+    - t1_acceleration_z
+    - t12_acceleration_x
+    - t12_acceleration_y
+    - t12_acceleration_z
+    - upper_rib_defl
+    - middle_rib_defl
+    - lower_rib_defl
+    - upper_rib_viscous_criterion
+    - middle_rib_viscous_criterion
+    - lower_rib_viscous_criterion
+    - shoulder_left_force_x
+    - shoulder_left_force_y
+    - shoulder_left_force_z
+    - pelvis_acceleration_x
+    - pelvis_acceleration_y
+    - pelvis_acceleration_z
+    - pubic_force_y
+  sample_type: one_time_step
+
+model:
+  functional_dim: 4
+  out_dim: 3
+  geometry_dim: 3
+  global_dim: 10
+  n_layers: 6
+  n_hidden: 256
+  n_head: 8
+  slice_num: 128
+  use_te: false
+  include_local_features: true
+  global_output_dim: 28
+  global_decoder_aggregation: mean

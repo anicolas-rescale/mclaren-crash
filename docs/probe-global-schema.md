@@ -23,11 +23,11 @@
 
 Missing PSA axes are omitted (not zero-filled) so `G_out` can be &lt; max. Max component set ≈ **42** (39 axes/defl + 3 rib VC) when every file exists; `*_resultant*` PSA channels are **not** extracted (derivable from xyz). Typical `HFuKPb`-class jobs emit **~40** (missing `t12_loadcell` Fz + Mz).
 
-Optional documentation key (not a train target):
+Clock key (not a train target; initialize skips it when expanding `name_t{time}`):
 
 ```yaml
 timeseries:
-  times: [0.0, 0.00199989, ...]   # mesh displacement frame times
+  timesteps: [0.0, 0.00199989, ...]   # mesh displacement frame times
 ```
 
 ## Example fragment
@@ -38,7 +38,7 @@ ttf_ms: 12.0
 # ... other DOE knobs ...
 
 timeseries:
-  times: [0.0, 0.00199989, 0.00399978]
+  timesteps: [0.0, 0.00199989, 0.00399978]
   head_acceleration_x: [0.0, 0.01, 0.02]
   head_acceleration_y: [0.0, -1.2, -2.0]
   head_acceleration_z: [0.0, 0.3, 0.4]

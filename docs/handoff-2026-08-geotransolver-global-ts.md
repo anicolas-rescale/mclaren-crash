@@ -1,11 +1,14 @@
 # Handoff — Transient GeoTransolver global time-series outputs (McLaren side-pole)
 
-**Date:** 2026-08-14 Fri evening → **updated 2026-08-15 Sat ~03:30 PT**  
-**Audience:** Andy (continue Monday) · Guangchen (architecture / latent / loss review) · Andre (context)  
-**Status:** Plumbing **works**. Holdout 200-epoch run **completed**. **P0 blocker for Monday:** several global probe GT channels are **flat zero / mis-mapped** — do **not** treat probe metrics as physics until extraction is fixed.  
+**Date:** 2026-08-14 Fri evening → **updated 2026-08-19**  
+**Audience:** Andy · Guangchen (PR review) · Andre  
+**Status (current):** P0 labels **fixed**. Clean 18-case train on `cXBNn` finished at 200 epochs. Plumbing PR: **https://github.com/rescale/rescale-ai/pull/1217**. Live notes: [`.claude/handoffs/2026-08-18-transient-global-ts.md`](../.claude/handoffs/2026-08-18-transient-global-ts.md). Sections below this banner are the **Aug 14–15 history** (poisoned 39-channel run on `ApZxU`) — keep for why we re-extracted, not for probe accuracy.
+
 **Artifacts:**
+- Clean holdout (28 channels, `crashPostProcOK`): [`docs/geotransolver-holdout-clean-2026-08/`](./geotransolver-holdout-clean-2026-08/)
+- Epoch-200 holdout grids (also on the PR): `docs/geotransolver-holdout-clean-2026-08/plots/epoch_200/`
+- **Poisoned** 39-channel holdout (ignore probe MSE): [`docs/geotransolver-holdout-2026-08/`](./geotransolver-holdout-2026-08/)
 - In-sample 20-ep smoke: [`docs/geotransolver-handoff-2026-08/`](./geotransolver-handoff-2026-08/)
-- Holdout 20/50/100/200: [`docs/geotransolver-holdout-2026-08/`](./geotransolver-holdout-2026-08/)
 
 Related plans (already written earlier this week):
 
@@ -79,14 +82,9 @@ We taught Transient **GeoTransolver time-conditional** to predict **occupant pro
 
 Repo: `rescale-ai`  
 Branch: **`feat/transient-global-ts-outputs`**  
-**Ahead of origin by 2 commits, not pushed:**
+**PR:** https://github.com/rescale/rescale-ai/pull/1217 (review requested from `guangchen-rescale`).
 
-| Commit | What |
-|--------|------|
-| `c4e42c635` | `feat(transient): add GeoTransolver global time-series output head` |
-| `553d5e6ce` | `fix(transient): replay GALE latents when PhysicsNeMo has no hidden flags` |
-
-No further product-code commit was needed for this wrap. Untracked local `mclaren_smoke8k.yaml` is an experiment stub only; the real 20-epoch Hydra config is copied into this handoff folder as [`mclaren_npoints20k_prod.yaml`](./geotransolver-handoff-2026-08/mclaren_npoints20k_prod.yaml).
+That PR has the `file_utils` clock-key skip and the **epoch-200** holdout 28-channel grids. Workstation Hydra yamls stay out of `rescale-ai`; experiment copies live in `scripts/ws_p35_probes/` here.
 
 ### Architecture (v1)
 

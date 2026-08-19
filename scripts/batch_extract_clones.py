@@ -57,6 +57,8 @@ STARTER_IDS: List[str] = [
 
 LOADCASE_TAG = "psaf:loadcase:os_es2re_pole32"
 EXCLUDE_PREFIX = "surrogate:exclude"
+# Old 0.1.13 / 0.2.17 extracts in HxPaa. New DOE-probe clones (0.1.14 / 0.2.18)
+# must NOT get this tag — leave it on the prior corpus only.
 POSTPROCESS_TAG = "crashPostProcess"
 # Side_Pole_Data_Occupant — https://eu.rescale.com/folders/HxPaa/
 TARGET_FOLDER_ID = "HxPaa"
@@ -123,7 +125,7 @@ class RescaleClient:
             hdrs.setdefault("Content-Type", "application/json")
         req = urllib.request.Request(url, data=body, headers=hdrs, method=method)
         last_err: Optional[Exception] = None
-        for attempt in range(1, 6):
+        for attempt in range(1, 13):
             try:
                 with urllib.request.urlopen(req, timeout=timeout) as resp:
                     raw = resp.read()
@@ -140,7 +142,7 @@ class RescaleClient:
                 last_err = e
                 sleep_s = min(60, 5 * attempt)
                 print(
-                    f"[retry] {method} {path} attempt {attempt}/5 "
+                    f"[retry] {method} {path} attempt {attempt}/12 "
                     f"err={type(e).__name__}: {e}; sleep {sleep_s}s",
                     flush=True,
                 )
@@ -157,6 +159,9 @@ class RescaleClient:
 
     def patch(self, path: str, **kw: Any) -> Any:
         return self._request("PATCH", path, **kw)
+
+    def delete(self, path: str, **kw: Any) -> Any:
+        return self._request("DELETE", path, **kw)
 
     def paginate(self, path: str) -> Iterable[Dict[str, Any]]:
         url = path
@@ -322,6 +327,17 @@ def add_tag(client: RescaleClient, job_id: str, name: str) -> None:
     client.post(f"/api/v2/jobs/{job_id}/tags/", json_body={"name": name})
 
 
+def remove_tag(client: RescaleClient, job_id: str, name: str) -> None:
+    """Drop a job tag if present. Rescale tag DELETE is by name query."""
+    encoded = urllib.parse.quote(name, safe="")
+    try:
+        client.delete(f"/api/v2/jobs/{job_id}/tags/{encoded}/")
+        return
+    except Exception:
+        pass
+    client.delete(f"/api/v2/jobs/{job_id}/tags/?name={encoded}")
+
+
 def move_job_to_folder(
     client: RescaleClient,
     job_id: str,
@@ -373,13 +389,18 @@ def create_and_submit(
     child_id = created["id"]
     print(f"[create] child={child_id}")
 
-    # Required tags
-    add_tag(client, child_id, POSTPROCESS_TAG)
+    # Keep loadcase; do not tag new extracts crashPostProcess (old corpus only).
     if LOADCASE_TAG in tag_names(parent):
         try:
             add_tag(client, child_id, LOADCASE_TAG)
         except Exception as e:
             print(f"[warn] could not copy loadcase tag: {e}")
+    try:
+        if POSTPROCESS_TAG in tag_names(client.get(f"/api/v2/jobs/{child_id}/")):
+            remove_tag(client, child_id, POSTPROCESS_TAG)
+            print(f"[tags] stripped inherited {POSTPROCESS_TAG} from {child_id}")
+    except Exception as e:
+        print(f"[warn] could not strip {POSTPROCESS_TAG}: {e}")
 
     tags = client.get(f"/api/v2/jobs/{child_id}/tags/")
     print(f"[tags] {child_id} -> {tags}")
@@ -393,8 +414,15 @@ def create_and_submit(
         print(f"[create] draft-only; not submitting {child_id}")
         return child_id
 
-    client.post(f"/api/v2/jobs/{child_id}/submit/")
-    print(f"[submit] {child_id}")
+    try:
+        client.post(f"/api/v2/jobs/{child_id}/submit/")
+        print(f"[submit] {child_id}")
+    except RuntimeError as e:
+        msg = str(e)
+        if "400" in msg and "started" in msg.lower():
+            print(f"[submit] {child_id} already started; continuing")
+        else:
+            raise
     return child_id
 
 
@@ -418,7 +446,12 @@ def wait_for_extract(
     }
     last = ""
     while True:
-        status = job_latest_status(client, job_id)
+        try:
+            status = job_latest_status(client, job_id)
+        except RuntimeError as e:
+            print(f"[poll] {job_id} transient API error: {e}; retry in {poll_s}s", flush=True)
+            time.sleep(poll_s)
+            continue
         if status != last:
             print(f"[poll] {job_id} status={status}")
             last = status
@@ -431,13 +464,26 @@ def wait_for_extract(
         time.sleep(poll_s)
 
 
-def classify_starter(client: RescaleClient) -> Tuple[List[Dict[str, Any]], List[Tuple[str, str]]]:
+def classify_starter(
+    client: RescaleClient,
+    *,
+    force_new: bool = False,
+    skip_parents: Optional[Sequence[str]] = None,
+) -> Tuple[List[Dict[str, Any]], List[Tuple[str, str]]]:
     eligible: List[Dict[str, Any]] = []
     skipped: List[Tuple[str, str]] = []
-    print("[index] scanning owned extract children…", flush=True)
-    child_index = index_extract_children(client)
-    print(f"[index] {len(child_index)} parent→child maps", flush=True)
+    skip_set = {s.strip() for s in (skip_parents or []) if s.strip()}
+    child_index: Dict[str, str] = {}
+    if force_new:
+        print("[index] force-new: skip owned-child scan", flush=True)
+    else:
+        print("[index] scanning owned extract children…", flush=True)
+        child_index = index_extract_children(client)
+        print(f"[index] {len(child_index)} parent→child maps", flush=True)
     for jid in STARTER_IDS:
+        if jid in skip_set:
+            skipped.append((jid, "skip_parent"))
+            continue
         try:
             job = client.get(f"/api/v2/jobs/{jid}/")
         except Exception as e:
@@ -453,9 +499,11 @@ def classify_starter(client: RescaleClient) -> Tuple[List[Dict[str, Any]], List[
         existing = find_existing_extract_child(
             client, jid, child_index=child_index
         )
-        if existing:
+        if existing and not force_new:
             skipped.append((jid, f"already_extracted:{existing}"))
             continue
+        if existing and force_new:
+            print(f"[index] {jid} has old extract {existing}; forcing new clone")
         eligible.append(job)
     return eligible, skipped
 
@@ -504,6 +552,17 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         default=TARGET_FOLDER_ID,
         help="Rescale folder id for Side_Pole_Data_Occupant (default HxPaa)",
     )
+    ap.add_argument(
+        "--force-new",
+        action="store_true",
+        help="clone even when an older extract child already exists",
+    )
+    ap.add_argument(
+        "--skip-parent",
+        action="append",
+        default=[],
+        help="sync parent id to skip (repeatable), e.g. HFuKPb already smoked as wJNQX",
+    )
     args = ap.parse_args(argv)
     folder_id = args.folder_id
 
@@ -511,7 +570,11 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     client = RescaleClient(args.base_url, token)
 
     print(f"[auth] base={args.base_url} folder={folder_id}")
-    eligible, skipped = classify_starter(client)
+    eligible, skipped = classify_starter(
+        client,
+        force_new=args.force_new,
+        skip_parents=args.skip_parent,
+    )
     print(f"[queue] eligible={len(eligible)} skipped={len(skipped)}")
     for jid, reason in skipped:
         print(f"  skip {jid}: {reason}")

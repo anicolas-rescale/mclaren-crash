@@ -1,0 +1,5222 @@
+{
+  "SicTPb": {
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 14.57540778411397,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 43.62784208296396,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 5.295441690621894,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 5.978320816436166,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.3801156471308803,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 14.289851622785461,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 38.86119848107421,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 41.555416645213214,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 8.784643336068712,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 40.24367038178007,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 41.40487025778527,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 60.31022458508363,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.3691586792446074,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 5.592327786031114,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.3925479258891225,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.1864970373355121,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 45.2095592044338,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 21.3672131311758,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.30674502563476574,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 1.005167214226156,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.502086875846766,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.2582199038587456,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 19.074361839772774,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 26.415759390910747,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 44.0879731283707,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.2696731171601434,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 32.931225828773954,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 56.5762244520795,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.5907221107889888,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.9111856939764993,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.2475383107265867,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.641983039831509,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.35956968787815347,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 8.514371553881933,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 9.49367826913521,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6177787221674398,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 53.28319370660526,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.1356376683824008,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3617104251451326,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 7.0132052765221395,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    }
+  },
+  "gNHKPb": {
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 14.427992916767664,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.33651217304105663,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 46.16156229198893,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 16.109302700394746,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 8.617575571602034,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 7.862049082328494,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 8.721779113204876,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 7.435650774803388,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 51.914326640635004,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 41.191919655005485,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 44.764926144144724,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 6.003714481187673,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 59.659840595232446,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.30740850830078154,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 10.066837292998873,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 16.49953598544345,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.9411346120779832,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 21.28853429186476,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 39.392864336474,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.5793049727934192,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.2859058992253522,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 21.702738913607185,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.9847431326755094,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 33.668835542956245,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 92.12978028549969,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 36.18221335619343,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.3738661740781592,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 56.23315868454325,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.4862264627623655,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.4279026777468329,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.5594318783740224,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 38.32977308188767,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.6767226142352468,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.3930931701660159,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.195982813745233,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.9996367569071036,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3871808890373803,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 40.10480193548224,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.49249103203831446,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.34615939132417883,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    }
+  },
+  "HLfJXb": {
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 3.7814295798501854,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 43.05805224199474,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 74.56573290055834,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.55179039467813,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.341414475893221,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 26.79215909155532,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 10.399955263093823,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 69.27202489719392,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 18.92829216660119,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 46.9614531128419,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.40151812960390526,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 39.0604803813381,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 46.02994907700328,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.10552763630852016,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 4.380557952194376,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 8.613060321268335,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.14930847807935613,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6159505799153042,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 3.8909708091554642,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.48480915834387783,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.3447078168996751,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 42.15097060087687,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 26.78234648999982,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 6.611632926082688,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 28.11242631749937,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.4062699995149937,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 117.42504765661991,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.42231578372248996,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.4046337948416688,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.8170396326310003,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5602662431567063,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.508944473335677,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 33.3061267752888,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.2674196209983124,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.6906310478617289,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.49184471137072,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 22.99149903377572,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3424873949648289,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.3770625881613499,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 43.57060778352819,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    }
+  },
+  "raMAac": {
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.495753389616304,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 3.94193834286979,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.300404880544816,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 17.346153695665787,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.4836296830378569,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 18.534194246716222,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 76.75598994464401,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 42.11872688191138,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 48.36699600190635,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 73.06793205045126,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 40.62391652717163,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 37.28832385656325,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 44.02876970996844,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.9566719657916956,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 47.73739823196554,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.43015077016965986,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 22.186776555487278,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 9.464400742482887,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 1.1381998303152565,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.5491773460133532,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3399216308593752,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.4493220302658658,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 32.78739843750002,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 13.34062516036183,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 32.70476988343223,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 43.73977710742848,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.39796733541766016,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.3292304089345943,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.4993289185461123,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.45600043891488573,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 24.78679532431001,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 112.82900854834615,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.4594845151988309,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.3372654835352806,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.8096058740744031,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5316434470287316,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5448845128293364,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6617267730849756,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.4793897311561172,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 9.471425968236051,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    }
+  },
+  "PUfJXb": {
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 46.41208182105058,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 68.1456134789823,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 23.44598054743662,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 44.24529380956809,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 9.149745044819472,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 53.88916162596684,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.5063725704952992,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 7.960166692340556,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 8.226721123092489,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 65.26434511311527,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.294472650395672,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 4.116349790061362,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.4770748493405693,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 42.71732992563715,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5815866172936796,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6794661822984771,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 15.961305821581059,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.6345079495229741,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 24.83188650166458,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 50.504232715781036,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 16.369282970502898,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 40.546704885511815,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.8604083801019129,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 36.78334586726374,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.7134631938037712,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 17.704827079327927,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 52.45619863312222,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 17.611574320421877,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.31811318663610055,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 112.11903619040557,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 29.375000484454173,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.534454838584767,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.2289646239274883,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.4320832336288002,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5288120922319156,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.35162531728822705,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 1.1689904859675677,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.3844935442015092,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.9015792486592508,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.2823109239150547,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    }
+  },
+  "odxaNb": {
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 58.89560753551108,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 42.05133887442652,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 40.72471986356065,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 8.998792182018548,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 27.274383373802536,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.4276716834741959,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 48.80790897957326,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 3.6477967517293464,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.478009622565817,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 62.34090613553383,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 5.132834827717092,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 17.644787232712403,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 13.431081654067372,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 6.495487920674466,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 44.125399794270365,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.41793730427693976,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.5813912395334588,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.7904616813089473,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.21719772098179052,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.1294518781374989,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 8.469742986903832,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6215636858147771,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 47.47710529480978,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.7561320626908367,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.4515780787759465,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 28.80014549344885,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 7.00688682949013,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 30.816265625000025,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.3206689379237568,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3598173029693105,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 121.8916291810766,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 27.12410311697248,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 4.8501810652721735,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.3132676903280256,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.3424983784090674,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.6979381198230575,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.5184659436061525,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.46154825224671975,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.4234054631433794,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 18.687087630449504,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    }
+  },
+  "GRKVXb": {
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 7.5372870615994785,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 7.816240463149038,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 12.883439552298741,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 7.375374444732257,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.42180199214440234,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 62.026049448087996,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 46.028297866366316,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.4009447109017096,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 7.1455217401075535,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 42.6216552403436,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 67.97330746555008,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 38.8344657389247,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 5.74102504735671,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 17.19861889346724,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 39.559037632433466,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 42.98224569007526,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.1681276788291346,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 11.547417487729879,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 8.370993770653325,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6389579258350716,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 36.30987118030085,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.7891629668482423,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.5164904554712388,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.19576081023998168,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 13.785374023437509,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.38438985199992864,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.7815853118989501,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 47.042624768671764,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 17.975283014182722,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.38694346040214567,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 38.22047262804054,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 92.7155710314722,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3512761053754523,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.5719736499009643,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.41486785182968344,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.2275030854305902,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.4048295059622986,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.6646830977120521,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 23.774173207478984,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.341744037456102,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    }
+  },
+  "EDGeNb": {
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 4.053172765373458,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 16.48317738212457,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 49.322354852473126,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 42.73411684147793,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 38.254615793018004,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.37413302656593556,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 39.075426023775584,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 19.875539498567186,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.40934670956177893,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 59.17328904360976,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.5900814455311697,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 13.083942646628163,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.21545462510209137,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 46.73237487133311,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 11.37063289971139,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.13031639780474735,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 7.793104449753617,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 22.64382226562501,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.8849840454763276,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6393068392816083,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.4219243385415925,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 15.730191454523656,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 27.68299332874497,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 49.52287809676456,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 43.51038055952975,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 30.45753400259441,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 122.17432058333569,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 40.93054893448641,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.4261811979139072,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.5012553742113612,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.7270119607642866,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3619483178577587,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.5132279330153809,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.264773989024934,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.1944779636897476,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.37090967034172295,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.7357515378898157,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 8.872792622186296,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 8.88727270304424,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 7.097537595952886,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    }
+  },
+  "bcLVXb": {
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 7.983902890933546,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 59.754574408131184,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.4101821504984523,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 20.150676879931517,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.3589863603327675,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 41.793000162719764,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 48.29214949945364,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 3.8023873915077604,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 74.00696477164338,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 36.910868749384015,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 67.6473276729631,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 18.281737927322446,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 5.615576853652573,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 42.93575460037109,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 7.868074911025524,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.165647622292025,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.5212571101191152,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 11.37866988859668,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 6.256926645682295,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.19473493388659943,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 27.05024681978386,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 36.21635398836537,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 46.060837905881975,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.6922706428232289,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6704307092909761,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5324519162372244,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.4730814520137816,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.352835844133086,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 6.006627698449256,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 37.076578689784014,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.2070229278965979,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.0311287385517538,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 40.730228879752616,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3862869602551781,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.4344881301269459,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.8211748445454113,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.4988101010737238,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.3763931558435116,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 121.16667791699106,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.9182849851149856,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    }
+  },
+  "KdFFQc": {
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 16.847048351718744,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 15.792959154780823,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 58.432811870115074,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 14.249034815842638,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 39.28803979459823,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 40.725921355681095,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.3676432675059666,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 7.490107008770273,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 14.267226767171731,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 39.08595357807182,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 19.209776362946666,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 46.661738859893454,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 40.97732771868557,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 5.718209648826723,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 5.987354480369492,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.34640722155227965,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 45.78746462139308,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.18612023795366628,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.8387776910251474,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 37.847273437500014,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.4331116563920003,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.5629559377302852,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5451621955215255,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 12.132441713137455,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.2954204711914064,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.29295310926634693,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 5.164598309282325,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 31.895453001060737,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.4004423764907176,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.200900108556877,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 26.32915815884205,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 33.56116059613212,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 59.04126384854375,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 51.52972688168797,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.6672917420427715,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 2.9602561900617785,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3037228367683456,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.5733741328960898,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5430812577709088,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.2480281686685932,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    }
+  },
+  "JDrsac": {
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 3.8362534366790206,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 40.88183695796923,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 68.35635289693131,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.302092556201603,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.49039094769125197,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.42672809850177823,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 18.070017131868106,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 5.537114236691641,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 16.489365611209518,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 41.750998456702696,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 7.240890287388119,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 72.11938038757832,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 37.687221973461824,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 7.523618046792221,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 43.2893980171312,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 46.727337553647814,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.16064915282264672,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.5301498397788219,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 4.885870117187503,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.6254153184098282,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 19.247975910370705,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 47.46910050234207,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6624260332641598,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 5.693172438039597,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.37664275366361566,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 30.998695106847265,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.13846872325434803,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 8.632283381064486,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 36.74061614206058,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.9305020310543056,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3264351879025971,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.3571968859863561,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 19.328592496103774,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.43433421953918905,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 105.52531976777362,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.33985668974841154,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.2617752642748008,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.561163407114926,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.7357534813175743,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5071133984685168,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    }
+  },
+  "UdFFQc": {
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 32.65879242568674,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 57.895593555856465,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 8.077365974378717,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 17.277862954844867,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 50.124087457957735,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 14.267610626816902,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 14.322074102220121,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 16.39541062913524,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 12.461172419450364,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 15.001739423318929,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 66.71436084750756,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 50.07648629280777,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 2.7642302250018025,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 44.29936078853631,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.48170718668193113,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 70.37749938771708,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.1633770674410715,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.6055466985850901,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.5027955836606157,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 11.875243164062503,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.6371330518262579,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.5059400568705211,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 38.45054268107401,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.3312121948518516,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 33.55222656250003,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 7.202668934732206,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 68.23292346384036,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 1.149620911981252,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 103.96196239810915,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.6047995394301791,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 69.44863660446747,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.211492237600833,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 166.4271297424584,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.5509252637408046,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 40.315123915855395,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.734061803062329,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.2155304241744908,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.7194097321345813,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5525959977222152,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.45110505272508705,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    }
+  },
+  "HPPKQc": {
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 40.46235732887254,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 42.43925176166233,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.3745904153975794,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 40.59464752721199,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 15.825999594820168,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 23.44299164573181,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 4.426093603452914,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 69.45680373372592,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 6.875089025637446,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.31896187493307915,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 83.60786066631803,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.6202554947231285,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 8.884252312564353,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 34.49347551191554,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 28.31851608971301,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 48.88924049161699,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.40697970021394514,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 44.16380278713192,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.14695098187226932,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.4034453834926449,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.620332486993509,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 4.887500395074678,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.9211245279888769,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 5.7754834234480334,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 35.11873986319472,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 30.350689281416074,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 15.722469726562514,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.2416456361012604,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.11739599812658034,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 19.84261324534083,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.6045695109896245,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.6611743431492338,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3750377306857117,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.3702024190806994,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 123.99745892335044,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 31.705511596718107,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.252165356885408,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.664528226436927,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5022821647560765,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.49348564215255986,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    }
+  },
+  "WvXCHc": {
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 5.864366250213057,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 65.47002466781218,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 41.2127650251383,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.41429369332496696,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 38.48009162953992,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 49.0229105347304,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 5.889109641399232,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 17.223306729061736,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.41409252409038705,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 18.063639854280876,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 4.105875290088515,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 43.168280628870214,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 43.4063518814703,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.639940109621699,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 66.51441401454387,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 10.828335034935858,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.7614198112055577,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.3831075712871863,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 11.263191794188403,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.5310650493725637,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 27.731469354408958,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.8592186783768865,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.38567708923764654,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.39924581164373313,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.1957402560062641,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 11.047872070312504,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.1644884633711525,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 25.93207207113219,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6701584722063869,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 22.44052743646708,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 46.67679735988042,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 9.305997951612731,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.5375128865376069,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.38579040425671085,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 119.33937865087044,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.4546079760218848,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.7131682198695959,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 35.600303010988604,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.3223174194128067,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.120821587162217,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    }
+  },
+  "aYQpTc": {
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 6.936549629941092,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 7.163783509291749,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 37.297454864126024,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 49.45502893453746,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 69.64660836272245,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 24.010634595641488,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.40226197160738525,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.3596586792359437,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 40.613593304836115,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 42.21646654186178,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 56.19567931409297,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 22.2299903899383,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 58.60642722300315,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 5.457126037711061,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 17.529143949311358,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 7.403628547981961,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 45.68288662301695,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.5820407171353489,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 22.73339653558938,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.8330508168682398,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6006175261407267,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 6.828750907332414,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3326203613281252,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.49880819308264607,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 1.0043287915894812,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 31.376483036438344,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 32.25375422894777,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3107363562562316,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 39.79209480013785,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.4657352826051442,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 23.819571844127704,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 122.63432756982161,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 38.4123075337212,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.4980803982244755,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.4472087341016714,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.8109686272969845,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.7332617841094553,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5426103512162677,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.3267097041220295,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.342063568773469,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    }
+  },
+  "kDBQHc": {
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 5.92606450781313,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 38.716244220476135,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 48.758661443284645,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 6.3634989731132805,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 14.422490735922068,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 41.290218865754134,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.3311277048814351,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 16.921761850929755,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 40.53327500792311,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 39.47038913950783,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 59.90194081609171,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 5.68494868539842,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.32043393453670005,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 16.662744577817822,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 18.143166551215526,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 4.087477271559556,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.7546953703252195,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.28735899923526736,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 44.47510639640383,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.3579078616875596,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 8.173958755513313,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 8.61579725324387,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.1288458975866224,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 10.962364923857436,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 1.0486973286894232,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.1931191942207608,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.555034051755389,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3098764772491812,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 29.18695147492681,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 41.13138054199557,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.1391027601470238,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 20.960387526260504,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3627258917060786,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.5763987242316835,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 44.2724248721832,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.6610665229060758,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.8492331841208334,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.0622300254248644,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.38233828214249965,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 52.55641472428563,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    }
+  },
+  "oAZOQc": {
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 6.59763435751043,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 16.248210795477508,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 46.17224685876349,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 62.282420528422406,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 44.2801700553889,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 7.057743143215556,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.4792558449254506,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 14.730085999334694,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 82.14053639705479,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.062017411142394,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 8.707531725038178,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 58.24446107222885,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.6597730367476334,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 6.481123997902626,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 37.32752617604384,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 14.373558016047815,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 20.457183995369444,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 24.24862304687501,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 50.572534313962784,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.65623495703117,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6467488850951565,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 7.11988124642991,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 1.09704688004904,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 37.346623632709516,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.46103369524499954,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.7117630152405423,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 21.43257155102884,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 7.727147755667723,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.4077814701701053,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.6976254930383287,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.19194195165106917,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.1164063034769334,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 105.62496844237918,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 1.2052317242668908,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.32058574923065697,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.4491229026071508,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.461998600144152,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.216498658051121,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 38.09608704014196,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 4.023349019552442,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    }
+  },
+  "fcWXEc": {
+    "pelvis_acceleration_z": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.976102462159427,
+      "path": "injury_channels/pelvis_acceleration_z__g.csv"
+    },
+    "middle_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "middle_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.38743338850917663,
+      "path": "injury_channels/middle_rib_viscous_criterion__m_s.csv"
+    },
+    "upper_rib_defl": {
+      "status": "OK",
+      "csv": "upper_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 37.10930821491037,
+      "path": "injury_channels/upper_rib_deflection__mm.csv"
+    },
+    "t12_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 49.303832248089904,
+      "path": "injury_channels/spine_t12_acceleration_y__g.csv"
+    },
+    "pelvis_acceleration_y": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 66.6308089764642,
+      "path": "injury_channels/pelvis_acceleration_y__g.csv"
+    },
+    "pelvis_acceleration_x": {
+      "status": "OK",
+      "csv": "pelvis_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 15.35612341561386,
+      "path": "injury_channels/pelvis_acceleration_x__g.csv"
+    },
+    "t12_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 7.181702945207438,
+      "path": "injury_channels/spine_t12_acceleration_z__g.csv"
+    },
+    "t1_acceleration_y": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 41.910910065819614,
+      "path": "injury_channels/spine_t1_acceleration_y__g.csv"
+    },
+    "head_acceleration_x": {
+      "status": "OK",
+      "csv": "head_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 21.503586851447942,
+      "path": "injury_channels/head_acceleration_x__g.csv"
+    },
+    "t1_acceleration_z": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 6.8435747233371655,
+      "path": "injury_channels/spine_t1_acceleration_z__g.csv"
+    },
+    "head_acceleration_z": {
+      "status": "OK",
+      "csv": "head_acceleration_z__g.csv",
+      "n": 800,
+      "max_abs": 46.31201717632024,
+      "path": "injury_channels/head_acceleration_z__g.csv"
+    },
+    "middle_rib_defl": {
+      "status": "OK",
+      "csv": "middle_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 41.86056788158264,
+      "path": "injury_channels/middle_rib_deflection__mm.csv"
+    },
+    "head_acceleration_y": {
+      "status": "OK",
+      "csv": "head_acceleration_y__g.csv",
+      "n": 800,
+      "max_abs": 70.1399989351727,
+      "path": "injury_channels/head_acceleration_y__g.csv"
+    },
+    "t1_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t1_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 8.424433102496536,
+      "path": "injury_channels/spine_t1_acceleration_x__g.csv"
+    },
+    "upper_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "upper_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.3827578157118772,
+      "path": "injury_channels/upper_rib_viscous_criterion__m_s.csv"
+    },
+    "t12_acceleration_x": {
+      "status": "OK",
+      "csv": "spine_t12_acceleration_x__g.csv",
+      "n": 800,
+      "max_abs": 4.3323551029694585,
+      "path": "injury_channels/spine_t12_acceleration_x__g.csv"
+    },
+    "lower_rib_defl": {
+      "status": "OK",
+      "csv": "lower_rib_deflection__mm.csv",
+      "n": 800,
+      "max_abs": 45.48874702933963,
+      "path": "injury_channels/lower_rib_deflection__mm.csv"
+    },
+    "t12_loadcell_force_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_force_z__kN.csv"
+    },
+    "backplate_force_x": {
+      "status": "OK",
+      "csv": "backplate_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.931460382174756,
+      "path": "injury_channels/backplate_force_x__kN.csv"
+    },
+    "lower_rib_viscous_criterion": {
+      "status": "OK",
+      "csv": "lower_rib_viscous_criterion__m_s.csv",
+      "n": 800,
+      "max_abs": 0.4976274965417431,
+      "path": "injury_channels/lower_rib_viscous_criterion__m_s.csv"
+    },
+    "t12_loadcell_moment_z": {
+      "status": "MISSING",
+      "csv": "spine_t12_moment_z__Nm.csv"
+    },
+    "neck_upper_force_x": {
+      "status": "OK",
+      "csv": "neck_upper_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.1599237416865151,
+      "path": "injury_channels/neck_upper_force_x__kN.csv"
+    },
+    "backplate_force_y": {
+      "status": "OK",
+      "csv": "backplate_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.6397908971513953,
+      "path": "injury_channels/backplate_force_y__kN.csv"
+    },
+    "neck_upper_force_y": {
+      "status": "OK",
+      "csv": "neck_upper_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 0.24704676263160028,
+      "path": "injury_channels/neck_upper_force_y__kN.csv"
+    },
+    "backplate_moment_z": {
+      "status": "OK",
+      "csv": "backplate_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 30.132047926306686,
+      "path": "injury_channels/backplate_moment_z__Nm.csv"
+    },
+    "neck_upper_force_z": {
+      "status": "OK",
+      "csv": "neck_upper_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5208677606297047,
+      "path": "injury_channels/neck_upper_force_z__kN.csv"
+    },
+    "neck_upper_moment_x": {
+      "status": "OK",
+      "csv": "neck_upper_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 11.285355533898914,
+      "path": "injury_channels/neck_upper_moment_x__Nm.csv"
+    },
+    "t12_loadcell_force_y": {
+      "status": "OK",
+      "csv": "spine_t12_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.6413893193916644,
+      "path": "injury_channels/spine_t12_force_y__kN.csv"
+    },
+    "neck_upper_moment_z": {
+      "status": "OK",
+      "csv": "neck_upper_moment_z__Nm.csv",
+      "n": 800,
+      "max_abs": 17.548736328125003,
+      "path": "injury_channels/neck_upper_moment_z__Nm.csv"
+    },
+    "neck_upper_moment_y": {
+      "status": "OK",
+      "csv": "neck_upper_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 5.894486655567725,
+      "path": "injury_channels/neck_upper_moment_y__Nm.csv"
+    },
+    "backplate_moment_x": {
+      "status": "OK",
+      "csv": "backplate_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 13.75149839089481,
+      "path": "injury_channels/backplate_moment_x__Nm.csv"
+    },
+    "t12_loadcell_force_x": {
+      "status": "OK",
+      "csv": "spine_t12_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.5027347233372705,
+      "path": "injury_channels/spine_t12_force_x__kN.csv"
+    },
+    "backplate_force_z": {
+      "status": "OK",
+      "csv": "backplate_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.48843598064726257,
+      "path": "injury_channels/backplate_force_z__kN.csv"
+    },
+    "backplate_moment_y": {
+      "status": "OK",
+      "csv": "backplate_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 35.43705485815751,
+      "path": "injury_channels/backplate_moment_y__Nm.csv"
+    },
+    "t12_loadcell_moment_x": {
+      "status": "OK",
+      "csv": "spine_t12_moment_x__Nm.csv",
+      "n": 800,
+      "max_abs": 119.99351370779236,
+      "path": "injury_channels/spine_t12_moment_x__Nm.csv"
+    },
+    "shoulder_left_force_x": {
+      "status": "OK",
+      "csv": "shoulder_left_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.3703313738436677,
+      "path": "injury_channels/shoulder_left_force_x__kN.csv"
+    },
+    "shoulder_left_force_y": {
+      "status": "OK",
+      "csv": "shoulder_left_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 1.2871847898204778,
+      "path": "injury_channels/shoulder_left_force_y__kN.csv"
+    },
+    "pubic_force_x": {
+      "status": "OK",
+      "csv": "pubic_force_x__kN.csv",
+      "n": 800,
+      "max_abs": 0.41651607927990725,
+      "path": "injury_channels/pubic_force_x__kN.csv"
+    },
+    "pubic_force_y": {
+      "status": "OK",
+      "csv": "pubic_force_y__kN.csv",
+      "n": 800,
+      "max_abs": 3.4981677414074266,
+      "path": "injury_channels/pubic_force_y__kN.csv"
+    },
+    "pubic_force_z": {
+      "status": "OK",
+      "csv": "pubic_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.7611075473712539,
+      "path": "injury_channels/pubic_force_z__kN.csv"
+    },
+    "t12_loadcell_moment_y": {
+      "status": "OK",
+      "csv": "spine_t12_moment_y__Nm.csv",
+      "n": 800,
+      "max_abs": 50.101421373619424,
+      "path": "injury_channels/spine_t12_moment_y__Nm.csv"
+    },
+    "shoulder_left_force_z": {
+      "status": "OK",
+      "csv": "shoulder_left_force_z__kN.csv",
+      "n": 800,
+      "max_abs": 0.5050987413006374,
+      "path": "injury_channels/shoulder_left_force_z__kN.csv"
+    }
+  }
+}

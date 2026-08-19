@@ -1,14 +1,16 @@
 # Handoff — McLaren ES-2 side-pole crash extractors (EU Utilities)
 
-**Updated:** 2026-08-14  
+**Updated:** 2026-08-19
 
-> **Variables UI OOM (Aug 2026) — DONE.** Merged [#1186](https://github.com/rescale/rescale-ai/pull/1186). Full write-up: [`docs/handoff-2026-08-variables-ui-oom-fix.md`](./docs/handoff-2026-08-variables-ui-oom-fix.md). Next McLaren AI track: GeoTransolver global TS (`docs/geotransolver-global-ts-implementation-plan.md`).
+> **GeoTransolver global TS (Aug 18–19) — plumbing PR open.** Clean PSA→YAML re-extract (`crashPostProcOK`, 18 cases) trained 200 epochs on Grossular `cXBNn`. Review: [rescale-ai#1217](https://github.com/rescale/rescale-ai/pull/1217). Current notes: [`.claude/handoffs/2026-08-18-transient-global-ts.md`](./.claude/handoffs/2026-08-18-transient-global-ts.md). Do **not** use the old 39-channel holdout numbers (`docs/geotransolver-holdout-2026-08/`) — those labels were poisoned.
+>
+> **Variables UI OOM (Aug 2026) — DONE.** Merged [#1186](https://github.com/rescale/rescale-ai/pull/1186). Write-up: [`docs/handoff-2026-08-variables-ui-oom-fix.md`](./docs/handoff-2026-08-variables-ui-oom-fix.md).
 
 **Local path:** `/Users/anicolas/Documents/rescale-projects/mclaren-crash-pole`  
 **Remote:** https://github.com/anicolas-rescale/mclaren-crash  
 **Gold smoke job:** **`HLfJXb`** (EU) — AI `0.1.13` + Metadata `0.2.17` (stock tile Commands, no bash helpers)  
 **Prior gold:** `hQdwMb` — AI `0.1.12` + Meta `0.2.14` (bash `/enc/tmp` launchers)  
-**Session status:** Starter-23 **batch extract done**. **18** collect-ready extracts in folder [`HxPaa`](https://eu.rescale.com/folders/HxPaa/). One extract skipped for train (missing Door/TTF knobs). Four James-tagged excludes never cloned. Next: `collect_cases` → `initialize(fea-deform)` → `validate` on the 18.
+**Session status:** Starter-23 extract **done**. Clean PSA-probe re-extract tagged `crashPostProcOK` (18 jobs) was collected/trained on `cXBNn`. Old HxPaa `crashPostProcess` corpus is the **poisoned** YAML set. Next: Guangchen review of #1217; more cases if we care about door-inner displacement.
 
 ## Goal
 
@@ -36,7 +38,7 @@ Utilities clone of finished crash (`HFuKPb`) + DEV post-job tiles emit full-tran
 | Metadata `custom_field` / `parent_custom_field` | **In ≥`0.2.16`** — McLaren still uses `mclaren_knobs` for parsed PSA strings |
 | Stock tiles (no bash helpers) | **Works** — `HLfJXb` |
 | Custom-fields API → job UI | Soft-fails 400/500 — non-fatal |
-| AI Physics collect → init → validate | **Works** — one-case smoke from `HLfJXb` |
+| AI Physics collect → init → validate | **Works** — 18-case `crashPostProcOK` dataset on `cXBNn` (`mclaren-p35-side-pole-18-probes`) |
 | Extractor images (current) | AI **`0.1.13`**, Metadata **`0.2.17`** |
 | Starter-23 corpus extract | **Done** — 19 cloned, **18** train-ready; see table |
 | Full 12-knob train claim | **Still thin OFAT** — collect OK; interpolation claim blocked |
