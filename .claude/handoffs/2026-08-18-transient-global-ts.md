@@ -1,22 +1,23 @@
 # Handoff — Transient GeoTransolver global time-series outputs
 
-**Date:** 2026-08-18 → updated 2026-08-20
-**Repos:** `rescale-ai` branch `feat/transient-global-ts-outputs`; experiment notes in `mclaren-crash-pole`
-**Audience:** next Claude / Andy continuing this work; Guangchen reviews the PR
+**Date:** 2026-08-18 → updated 2026-08-20 (PRs merged)
+**Repos:** `rescale-ai` `main` (merged); experiment notes in `mclaren-crash-pole`
+**Audience:** next Claude / Andy continuing this work
 
 ---
 
 ## TL;DR
 
-Plumbing is in and smoked. PR: https://github.com/rescale/rescale-ai/pull/1217
-(`feat/transient-global-ts-outputs`). Do **not** sell McLaren numbers as
-accuracy. 18 OFAT cases + mean-pool cannot teach door-inner intrusion
-(`KwXUX` last-frame disp L2 still ~42% at epoch 200).
+Plumbing **shipped**. Merged:
+- https://github.com/rescale/rescale-ai/pull/1217 — global-TS output head
+- https://github.com/rescale/rescale-ai/pull/1234 — eval-folder `time_step` / GT / `*_pred` for webapp 2D viewer
 
-**Guangchen (2026-08-20):** liked the PR, said results look really good for
-only 18 cases, “basically in good shape.” Will review this afternoon, then
-merge and start testing in **dev** if it looks good. Next: wait for that
-review/merge, then smoke on Dev.
+Guangchen approved both. Do **not** sell McLaren numbers as accuracy. 18 OFAT
+cases + mean-pool cannot teach door-inner intrusion (`KwXUX` last-frame disp
+L2 still ~42% at epoch 200).
+
+**Next:** Dev smoke — platform evaluation export → Evaluation modal → **2D Plot**
+toggle (needs `time_step` + paired GT/`*_pred`). No retrain required.
 
 `.claude` is gitignored in `rescale-ai`. This file is local agent memory.
 Committed reviewer notes: `rescale_ai/solver/transient/GLOBAL_TS_OUTPUTS.md`.
@@ -32,7 +33,8 @@ Port FEA MGN `outvar_ts` onto `GeoTransolverTimeConditional`:
 - `rollout.py` — joint nodal + global return when `global_output_dim > 0`
 - `datapipe.py` — YAML timeseries load, `outvar_ts` stats, T alignment
 - `train.py` — `L_disp + λ L_probe`, TB `loss/disp` / `loss/probe`
-- `inference.py` — `*_global_values.json` next to VTPs
+- `inference.py` / `global_values_json.py` — `*_global_values.json` with FEA
+  contract (`time_step`, GT, `*_pred`; VTP `case_path` + length align)
 - `file_utils.py` — skip clock keys `timesteps` / `times` / `frame_indices` /
   `vtp_array_names` when expanding YAML timeseries into Variables
 - Tests: `tests/rescale_ai/solver/transient/test_global_ts.py`,
@@ -160,12 +162,13 @@ globals). Ignore `docs/geotransolver-holdout-2026-08/` for probe accuracy.
 
 ## PR
 
-Opened and requested review from `guangchen-rescale`:
-https://github.com/rescale/rescale-ai/pull/1217
+**Merged** (Guangchen approved):
+- https://github.com/rescale/rescale-ai/pull/1217 — global-TS head + McLaren smoke
+- https://github.com/rescale/rescale-ai/pull/1234 — eval `time_step` for 2D viewer
 
-Merged `main` into the branch (no rebase). Epoch-200 holdout 28-channel
-grids are in the PR body (`KwXUX`, `dWNQX`) from Desktop screenshots after
-SSH to `54.154.10.195` timed out. Metrics table is 10/50/100/200.
+Epoch-200 holdout 28-channel grids were in the #1217 body (`KwXUX`, `dWNQX`).
+Metrics table is 10/50/100/200. Bugbot on #1234: VTP `case_path` YAML lookup
++ series-length align — fixed before merge.
 
 ### Guangchen reply (2026-08-20 Slack)
 

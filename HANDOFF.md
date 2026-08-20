@@ -2,7 +2,7 @@
 
 **Updated:** 2026-08-20
 
-> **GeoTransolver global TS — almost across the finish line.** Clean PSA→YAML re-extract (`crashPostProcOK`, 18 cases) trained 200 epochs on Grossular `cXBNn`. PR [rescale-ai#1217](https://github.com/rescale/rescale-ai/pull/1217): Guangchen liked it (2026-08-20), will review this afternoon, then merge + test in **dev**. Notes: [`.claude/handoffs/2026-08-18-transient-global-ts.md`](./.claude/handoffs/2026-08-18-transient-global-ts.md). Do **not** use the old 39-channel holdout numbers (`docs/geotransolver-holdout-2026-08/`) — those labels were poisoned.
+> **GeoTransolver global TS — plumbing shipped.** Clean PSA→YAML re-extract (`crashPostProcOK`, 18 cases) trained 200 epochs on Grossular `cXBNn`. Merged: [rescale-ai#1217](https://github.com/rescale/rescale-ai/pull/1217) (global-TS head) + [rescale-ai#1234](https://github.com/rescale/rescale-ai/pull/1234) (eval-folder `time_step` for webapp 2D viewer). Guangchen approved both. Notes: [`.claude/handoffs/2026-08-18-transient-global-ts.md`](./.claude/handoffs/2026-08-18-transient-global-ts.md). Do **not** use the old 39-channel holdout numbers (`docs/geotransolver-holdout-2026-08/`) — those labels were poisoned. **Next:** Dev smoke — open Evaluation 2D Plot after one platform eval export (no retrain required).
 >
 > **Variables UI OOM (Aug 2026) — DONE.** Merged [#1186](https://github.com/rescale/rescale-ai/pull/1186). Write-up: [`docs/handoff-2026-08-variables-ui-oom-fix.md`](./docs/handoff-2026-08-variables-ui-oom-fix.md).
 
@@ -10,7 +10,7 @@
 **Remote:** https://github.com/anicolas-rescale/mclaren-crash  
 **Gold smoke job:** **`HLfJXb`** (EU) — AI `0.1.13` + Metadata `0.2.17` (stock tile Commands, no bash helpers)  
 **Prior gold:** `hQdwMb` — AI `0.1.12` + Meta `0.2.14` (bash `/enc/tmp` launchers)  
-**Session status:** Starter-23 extract **done**. Clean PSA-probe re-extract tagged `crashPostProcOK` (18 jobs) was collected/trained on `cXBNn`. Old HxPaa `crashPostProcess` corpus is the **poisoned** YAML set. Next: Guangchen formal review + merge of #1217, then Dev smoke. More cases later if we care about door-inner displacement.
+**Session status:** Starter-23 extract **done**. Clean PSA-probe re-extract tagged `crashPostProcOK` (18 jobs) collected/trained on `cXBNn`. Old HxPaa `crashPostProcess` corpus is the **poisoned** YAML set. Plumbing PRs **merged**. Next: Dev 2D-viewer smoke. More cases later if we care about door-inner displacement.
 
 ## Goal
 
