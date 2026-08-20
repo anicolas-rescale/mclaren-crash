@@ -1,6 +1,6 @@
 # Handoff — Transient GeoTransolver global time-series outputs
 
-**Date:** 2026-08-18
+**Date:** 2026-08-18 → updated 2026-08-20
 **Repos:** `rescale-ai` branch `feat/transient-global-ts-outputs`; experiment notes in `mclaren-crash-pole`
 **Audience:** next Claude / Andy continuing this work; Guangchen reviews the PR
 
@@ -8,11 +8,15 @@
 
 ## TL;DR
 
-Plumbing is in and smoked. PR for Guangchen:
-https://github.com/rescale/rescale-ai/pull/1217
+Plumbing is in and smoked. PR: https://github.com/rescale/rescale-ai/pull/1217
 (`feat/transient-global-ts-outputs`). Do **not** sell McLaren numbers as
 accuracy. 18 OFAT cases + mean-pool cannot teach door-inner intrusion
 (`KwXUX` last-frame disp L2 still ~42% at epoch 200).
+
+**Guangchen (2026-08-20):** liked the PR, said results look really good for
+only 18 cases, “basically in good shape.” Will review this afternoon, then
+merge and start testing in **dev** if it looks good. Next: wait for that
+review/merge, then smoke on Dev.
 
 `.claude` is gitignored in `rescale-ai`. This file is local agent memory.
 Committed reviewer notes: `rescale_ai/solver/transient/GLOBAL_TS_OUTPUTS.md`.
@@ -162,3 +166,14 @@ https://github.com/rescale/rescale-ai/pull/1217
 Merged `main` into the branch (no rebase). Epoch-200 holdout 28-channel
 grids are in the PR body (`KwXUX`, `dWNQX`) from Desktop screenshots after
 SSH to `54.154.10.195` timed out. Metrics table is 10/50/100/200.
+
+### Guangchen reply (2026-08-20 Slack)
+
+> Thanks Andy! The PR looks great, and the results already look really good
+> considering it’s only trained on 18 cases. I think we’re basically in good
+> shape. I’ll review it this afternoon, and if everything looks good, we can
+> merge it and start testing in dev. Thanks for getting this together so
+> quickly. Exciting!
+
+**Next:** his formal review → merge → Dev tile smoke. Still not an accuracy
+claim on 18 OFAT cases.

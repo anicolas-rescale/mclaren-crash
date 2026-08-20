@@ -1,8 +1,8 @@
 # Handoff — Transient GeoTransolver global time-series outputs (McLaren side-pole)
 
-**Date:** 2026-08-14 Fri evening → **updated 2026-08-19**  
+**Date:** 2026-08-14 Fri evening → **updated 2026-08-20**  
 **Audience:** Andy · Guangchen (PR review) · Andre  
-**Status (current):** P0 labels **fixed**. Clean 18-case train on `cXBNn` finished at 200 epochs. Plumbing PR: **https://github.com/rescale/rescale-ai/pull/1217**. Live notes: [`.claude/handoffs/2026-08-18-transient-global-ts.md`](../.claude/handoffs/2026-08-18-transient-global-ts.md). Sections below this banner are the **Aug 14–15 history** (poisoned 39-channel run on `ApZxU`) — keep for why we re-extracted, not for probe accuracy.
+**Status (current):** P0 labels **fixed**. Clean 18-case train on `cXBNn` finished at 200 epochs. Plumbing PR: **https://github.com/rescale/rescale-ai/pull/1217**. Guangchen (2026-08-20): PR looks great, results good for 18 cases, “basically in good shape,” review this afternoon then merge + **dev** test. Live notes: [`.claude/handoffs/2026-08-18-transient-global-ts.md`](../.claude/handoffs/2026-08-18-transient-global-ts.md). Sections below this banner are the **Aug 14–15 history** (poisoned 39-channel run on `ApZxU`) — keep for why we re-extracted, not for probe accuracy.
 
 **Artifacts:**
 - Clean holdout (28 channels, `crashPostProcOK`): [`docs/geotransolver-holdout-clean-2026-08/`](./geotransolver-holdout-clean-2026-08/)
