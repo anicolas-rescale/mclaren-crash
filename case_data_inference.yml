@@ -1,0 +1,44 @@
+# Inference case for McLaren P35 side-pole
+# Global input features (knobs) - adjust these values for your inference scenario
+airbag_E22: 0.0
+airbag_z_up_mm: 0.0
+brace_P16: 0.0
+bracket_cutt: 0.0
+cavity_foam_gl: 50.0
+door_inner_mm: 1.2
+door_outer_mm: 1.2
+rail_foam: 0.0
+seat_inb_foam: 0.0
+ttf_ms: 30.0
+
+# Global output probe channels (28 channels) - placeholder zeros for inference
+# Model will predict these; ground truth not needed
+timeseries:
+  head_acceleration_x: [0.0]
+  head_acceleration_y: [0.0]
+  head_acceleration_z: [0.0]
+  lower_rib_defl: [0.0]
+  lower_rib_viscous_criterion: [0.0]
+  middle_rib_defl: [0.0]
+  middle_rib_viscous_criterion: [0.0]
+  neck_upper_force_x: [0.0]
+  neck_upper_force_y: [0.0]
+  neck_upper_force_z: [0.0]
+  neck_upper_moment_x: [0.0]
+  neck_upper_moment_y: [0.0]
+  neck_upper_moment_z: [0.0]
+  pelvis_acceleration_x: [0.0]
+  pelvis_acceleration_y: [0.0]
+  pelvis_acceleration_z: [0.0]
+  pubic_force_y: [0.0]
+  shoulder_left_force_x: [0.0]
+  shoulder_left_force_y: [0.0]
+  shoulder_left_force_z: [0.0]
+  t12_acceleration_x: [0.0]
+  t12_acceleration_y: [0.0]
+  t12_acceleration_z: [0.0]
+  t1_acceleration_x: [0.0]
+  t1_acceleration_y: [0.0]
+  t1_acceleration_z: [0.0]
+  upper_rib_defl: [0.0]
+  upper_rib_viscous_criterion: [0.0]

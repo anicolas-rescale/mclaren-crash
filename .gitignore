@@ -11,6 +11,11 @@ scripts/__pycache__/
 .ws-patch-backup/
 os_es2re_pole32_HFuKPb_report/
 
+# streamlit app local env + large mesh caches (JSONs OK to commit)
+streamlit_app/.venv/
+streamlit_app/demo_data/evaluation/*.vtp
+streamlit_app/**/__pycache__/
+
 # holdout full dump (VTPs + all-channel PNGs); keep curated metrics/ + plots/
 docs/geotransolver-holdout-2026-08/metrics_raw/
 scripts/*.log
