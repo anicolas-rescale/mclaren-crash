@@ -1,9 +1,32 @@
 # Handoff — McLaren P35 UI-only end-to-end walkthrough (Sep 2–3, 2026)
 
 **Date:** 2026-09-02 Wed evening → 2026-09-03 Thu morning  
+**Updated:** 2026-09-28 (customer share follow-up)  
 **Goal:** Full UI workflow for Transient GeoTransolver with global TS probes — no CLI, no platform SDK, pure webapp clicks  
 **Outcome:** **Training succeeded** after overnight retry. **Evaluation completed**. Global TS data exists, plots render in UI. **Inference fundamentally broken** — UI sliders are decorative (frontend/backend disconnected), requires SSH to manually copy missing metadata files.  
 **Verdict:** UI path is **barely viable** with multiple sharp edges; production users would hit **5+ blocking issues** without SSH access or internal tile knowledge. **Inference is completely non-functional via UI-only path** for models with global features.
+
+**Customer PDF:** [`McLaren AI Physics walkthrough.pdf`](./McLaren%20AI%20Physics%20walkthrough.pdf) (same flow, written for Roberto / Sumit). DOE: [`../examples/lsdyna-doe.json`](../examples/lsdyna-doe.json).
+
+---
+
+## Customer share / access (Sep 25–28)
+
+Shared the walkthrough PDF + HPS link with **Roberto Cepeda** and **Sumit Sharma** (cc Dinal, James) after the Sep 25 readout.
+
+**Sep 28 — Roberto reply:** PDF links and the `*.json` did not open for him. Asked to get the links and json by email.
+
+**What that likely means:** without folder/job access he cannot finish the walkthrough. The extract DOE also sits on every AI Physics extract job, so a failed json download from Drive-style links is a strong signal he cannot see those jobs yet.
+
+**Where the jobs live:** Rescale DST folder **`Side_Pole_Data_Occupant`** (shared with Andy, not owned by Andy). Contains:
+- original McLaren Passive Safety Automation runs
+- post-processing / AI Physics extract jobs (tag `crashPostProcOK` / related)
+
+**Ask:** if Roberto / Sumit still cannot see that folder or those jobs, **James shares `Side_Pole_Data_Occupant`** with them. Andy emailed the DOE as `lsdyna-doe.json` attachment and pointed them at that folder.
+
+**PDF note for them:** a couple of broken links were Google Doc comments about versioning. They no longer apply to the latest AI Physics platform. Safe to ignore. Do not rely on the Google Doc itself for external share.
+
+Thread: [McLaren AI Physics walkthrough and HPS access](https://mail.google.com/mail/u/#inbox/1a0d961c4986b667). HPS (optional toy path): https://eu.rescale.com/storage/wtaTdb/status/ (McLaren HPS on Rescale DST).
 
 ---
 
