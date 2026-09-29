@@ -1,7 +1,7 @@
 # Handoff — McLaren P35 UI-only end-to-end walkthrough (Sep 2–3, 2026)
 
 **Date:** 2026-09-02 Wed evening → 2026-09-03 Thu morning  
-**Updated:** 2026-09-28 (customer share follow-up)  
+**Updated:** 2026-09-29 (customer `DatasetBuilder` typo follow-up)  
 **Goal:** Full UI workflow for Transient GeoTransolver with global TS probes — no CLI, no platform SDK, pure webapp clicks  
 **Outcome:** **Training succeeded** after overnight retry. **Evaluation completed**. Global TS data exists, plots render in UI. **Inference fundamentally broken** — UI sliders are decorative (frontend/backend disconnected), requires SSH to manually copy missing metadata files.  
 **Verdict:** UI path is **barely viable** with multiple sharp edges; production users would hit **5+ blocking issues** without SSH access or internal tile knowledge. **Inference is completely non-functional via UI-only path** for models with global features.
@@ -23,6 +23,17 @@ Shared the walkthrough PDF + HPS link with **Roberto Cepeda** and **Sumit Sharma
 - post-processing / AI Physics extract jobs (tag `crashPostProcOK` / related)
 
 **Ask:** if Roberto / Sumit still cannot see that folder or those jobs, **James shares `Side_Pole_Data_Occupant`** with them. Andy emailed the DOE as `lsdyna-doe.json` attachment and pointed them at that folder.
+
+**Sep 29 — Roberto hits `ImportError` in Jupyter (confirms the json/link access problem, from a different angle):**
+
+Roberto reported `ImportError: cannot import name 'DatasetBuiIder' from 'rescale_ai.interactive'` while running the PDF's collect/init/validate snippet. Root cause: **not a real bug** — because he couldn't open the links/json (see Sep 28 above), he had to manually retype the code from the PDF, and `l`/`I` are visually identical in the PDF's font. He wrote `DatasetBuiIder` instead of `DatasetBuilder`.
+
+Verified before replying:
+- Confirmed against the actual `v2.1.12` git tag (not just current `main`, which is already 2.2.0) that `DatasetBuilder.search_jobs/collect_cases/initialize_dataset(dataset_type="fea-deform")/validate_dataset` all match his snippet 1:1 — no other API drift to worry about.
+- `TAG = "crashPostProcOK"` is fine for him since the tagged jobs were shared with his account (per the Sep 25–28 share above).
+- His manual `.lock`-file cleanup step is legitimate, not a workaround for a mistake on his end: `automation-metadata-extractor`'s `base_plugin.py` now auto-removes `case_data.yml.lock` after extraction (fixed post-hoc), but his 18 jobs were extracted **before** that fix landed, so the stray lock sidecars are still there. Confirmed via `automation-ai-extractor`/`automation-metadata-extractor` repos (commit `d74e0bd` introduced the lock, `base_plugin._cleanup_lock` removes it going forward).
+
+Replied confirming the `l`→`I` typo and re-sent the exact working snippet, with a note to rename `DATASET_NAME` away from `-andy` (cosmetic; his own dataset name, no functional impact either way).
 
 **PDF note for them:** a couple of broken links were Google Doc comments about versioning. They no longer apply to the latest AI Physics platform. Safe to ignore. Do not rely on the Google Doc itself for external share.
 
