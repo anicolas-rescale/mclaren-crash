@@ -1,9 +1,10 @@
 # Handoff — McLaren P35 UI-only end-to-end walkthrough (Sep 2–3, 2026)
 
 **Date:** 2026-09-02 Wed evening → 2026-09-03 Thu morning  
-**Updated:** 2026-09-29 (customer `DatasetBuilder` typo follow-up)  
+**Updated:** 2026-10-09 (Roberto prod-tile train setup unblocked; Grossular capacity note)  
 **Goal:** Full UI workflow for Transient GeoTransolver with global TS probes — no CLI, no platform SDK, pure webapp clicks  
 **Outcome:** **Training succeeded** after overnight retry. **Evaluation completed**. Global TS data exists, plots render in UI. **Inference fundamentally broken** — UI sliders are decorative (frontend/backend disconnected), requires SSH to manually copy missing metadata files.  
+**Customer status (Oct 2026):** Roberto can **create / submit** Transient training on the **prod tile** after Guangchen’s release hotfix. First Grossular start hit cloud capacity (cleared after ~20 min). Inference UI path still broken as below.  
 **Verdict:** UI path is **barely viable** with multiple sharp edges; production users would hit **5+ blocking issues** without SSH access or internal tile knowledge. **Inference is completely non-functional via UI-only path** for models with global features.
 
 **Customer PDF:** [`McLaren AI Physics walkthrough.pdf`](./McLaren%20AI%20Physics%20walkthrough.pdf) (same flow, written for Roberto / Sumit). DOE: [`../examples/lsdyna-doe.json`](../examples/lsdyna-doe.json).
@@ -38,6 +39,24 @@ Replied confirming the `l`→`I` typo and re-sent the exact working snippet, wit
 **PDF note for them:** a couple of broken links were Google Doc comments about versioning. They no longer apply to the latest AI Physics platform. Safe to ignore. Do not rely on the Google Doc itself for external share.
 
 Thread: [McLaren AI Physics walkthrough and HPS access](https://mail.google.com/mail/u/#inbox/1a0d961c4986b667). HPS (optional toy path): https://eu.rescale.com/storage/wtaTdb/status/ (McLaren HPS on Rescale DST).
+
+---
+
+## Customer train submit — Roberto (Oct 1–9)
+
+**Oct 1 — Transient submit fails on prod 2.1.12:** Roberto hit `FileNotFoundError` for `.../site-packages/rescale_ai/solver/transient/train.py` while staging training artifacts (`copy_training_script`), before Grossular started. Same log in `#ai-training-app-dev`. “Create Training Artifacts” first is the **same failing path** (not a workaround).
+
+**Root cause (Guangchen):** Transient still copied `train.py` into artifacts on the **compiled / sourceless** prod venv. Fix is stop copying and launch `python -m rescale_ai.solver.transient.train` (same pattern as earlier “remove artifact script dependency” work). **Not** “add `__init__.py` so `train.py` ships” — that helps sourceful installs but is the wrong prod unblock.
+
+**Fix / deploy:** [rescale-ai#1386](https://github.com/rescale/rescale-ai/pull/1386) merged to **`release`** (`dd24ef153`, Oct 5). **Not on `main`** as of last check. Guangchen confirmed Oct 6: metadata/prod deployment live; GeoTransolver (time series) submit launches on the **prod tile**.
+
+**Oct 9 — Roberto:** Training setup works and generates the Rescale run. Job `DuFKq` then waited on Grossular-1 (“insufficient capacity from the cloud provider”) and started after ~20 min. Asked for alternatives if Grossular stays tight.
+
+**Reply guidance:** Cloud capacity shortage, not his job/setup. Demand was unusually high (Palooza week). Alternatives if it repeats: **Gananite** or **Wurtzite**. For this GeoTransolver workflow Grossular is a fine default; any comparable GPU should work. Prefer a **new** prod-tile workstation/job (old 2.1.12 sessions stay broken).
+
+**Still open for him:** UI-only inference (sliders / `case_data.yml` staging) — see blockers below. Train submit path is unblocked.
+
+Email threads: [AI Physics training failure](https://mail.google.com/mail/u/#inbox/1a0f71d7100f4f7e) + follow-ups on Grossular capacity.
 
 ---
 
