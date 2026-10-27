@@ -1,11 +1,11 @@
 # Handoff — McLaren P35 UI-only end-to-end walkthrough (Sep 2–3, 2026)
 
 **Date:** 2026-09-02 Wed evening → 2026-09-03 Thu morning  
-**Updated:** 2026-10-09 (Roberto prod-tile train setup unblocked; Grossular capacity note)  
+**Updated:** 2026-10-27 (Roberto mesh Inference hotfix on prod 2.1.12 / wtaTdb)  
 **Goal:** Full UI workflow for Transient GeoTransolver with global TS probes — no CLI, no platform SDK, pure webapp clicks  
-**Outcome:** **Training succeeded** after overnight retry. **Evaluation completed**. Global TS data exists, plots render in UI. **Inference fundamentally broken** — UI sliders are decorative (frontend/backend disconnected), requires SSH to manually copy missing metadata files.  
-**Customer status (Oct 2026):** Roberto can **create / submit** Transient training on the **prod tile** after Guangchen’s release hotfix. First Grossular start hit cloud capacity (cleared after ~20 min). Inference UI path still broken as below.  
-**Verdict:** UI path is **barely viable** with multiple sharp edges; production users would hit **5+ blocking issues** without SSH access or internal tile knowledge. **Inference is completely non-functional via UI-only path** for models with global features.
+**Outcome:** **Training succeeded** after overnight retry. **Evaluation completed**. Global TS data exists, plots render in UI. Stock Inference on **prod 2.1.12** still hits `case_data.yml not found` for mesh+knob models; **mesh Inference unblocked via WS hotfix** (see Oct 27). Probe curves in Inference UI still need the fuller PR (#1423) / newer tile.  
+**Customer status (Oct 2026):** Roberto can **create / submit** Transient training on the **prod tile** after Guangchen’s release hotfix. Mesh Inference on Side Pole works after the HPS-staged bash hotfix (validated Andy Oct 27; emailed to Roberto same day).  
+**Verdict:** UI path is **barely viable** with multiple sharp edges. Train/eval OK on prod. Mesh Inference OK with one-liner hotfix on each new WS. Probe Inference still blocked on this tile.
 
 **Customer PDF:** [`McLaren AI Physics walkthrough.pdf`](./McLaren%20AI%20Physics%20walkthrough.pdf) (same flow, written for Roberto / Sumit). DOE: [`../examples/lsdyna-doe.json`](../examples/lsdyna-doe.json).
 
@@ -54,9 +54,57 @@ Thread: [McLaren AI Physics walkthrough and HPS access](https://mail.google.com/
 
 **Reply guidance:** Cloud capacity shortage, not his job/setup. Demand was unusually high (Palooza week). Alternatives if it repeats: **Gananite** or **Wurtzite**. For this GeoTransolver workflow Grossular is a fine default; any comparable GPU should work. Prefer a **new** prod-tile workstation/job (old 2.1.12 sessions stay broken).
 
-**Still open for him:** UI-only inference (sliders / `case_data.yml` staging) — see blockers below. Train submit path is unblocked.
+**Train submit path:** unblocked. **Mesh Inference:** unblocked via hotfix below (Oct 27). **Probe Inference UI:** still open on this tile.
 
 Email threads: [AI Physics training failure](https://mail.google.com/mail/u/#inbox/1a0f71d7100f4f7e) + follow-ups on Grossular capacity.
+
+---
+
+## Customer Inference — Roberto (Oct 27)
+
+**Symptom (reproduced Andy on Grossular WS `udeprod_YYtpgb`, model `P35_OS_Side_Pole_Model02`):**
+
+```
+FileNotFoundError('case_data.yml not found in /tmp/transient_inference_*/case
+or any ancestor cases/ dir. Cannot load outvar_ts_keys without timeseries data.')
+full_key: datapipe
+```
+
+Support first-pass (Chloe): try a brand-new AI Physics session. That does **not** fix it — same bug on a clean WS.
+
+**Root cause (prod LATEST = rescale-ai 2.1.12, often sourceless/protected wheel):**
+- Transient Inference runner still builds the training-style datapipe path that resolves `outvar_ts_keys` from `case_data.yml` timeseries.
+- UI Inference for mesh+knobs stages the example mesh only (no GT timeseries YAML), so load fails.
+- Fix already exists on newer code / `main` (PR direction around empty `outvar_ts_keys=[]` + correct tuple unpack for mesh-only). **Not on the prod tile Roberto is on yet.**
+- Mesh/knobs only — does **not** restore probe curves in the Inference UI (needs fuller #1423-class change + tile bump).
+
+**Customer hotfix (staged on shared HPS `wtaTdb`):**
+
+| What | Where |
+|------|--------|
+| Apply script | `~/storage_wtaTdb/shared/mclaren-ws-patches/mclaren_ws_mesh_inference_hotfix.sh` |
+| Patched runner (sourceless drop-in) | `~/storage_wtaTdb/shared/mclaren-ws-patches/inference_runner_transient.py.patched-2.1.12` |
+| Repo copies | `scripts/mclaren_ws_mesh_inference_hotfix.sh`, `scripts/inference_runner_transient.py.patched-2.1.12`, `scripts/install_hotfix_onto_wtaTdb.sh` / `stage_hotfix_onto_wtaTdb_via_ws.sh` |
+
+On a Training WS with `wtaTdb` attached:
+
+```bash
+bash ~/storage_wtaTdb/shared/mclaren-ws-patches/mclaren_ws_mesh_inference_hotfix.sh
+```
+
+Then hard-refresh the browser (`Cmd+Shift+R` / `Ctrl+Shift+R`) → Inference again.
+
+Script behavior: if `.py` exists, sed-patch in place; if protected/sourceless (`.py` missing), install the bundled patched runner over site-packages so it wins over `.pyc`. Optional flags: `--dry-run`, `--no-restart`.
+
+**Validation (Andy, Oct 27):**
+1. Fresh WS → reproduced the exact Roberto error.
+2. Ran hotfix (sourceless path) → Inference succeeded (mesh).
+3. Emailed Roberto (reply on support thread): bug on current tile, fixed upstream but not shipped here yet, one-liner + hard-refresh, screenshots of SSH UI + working Inference.
+
+**Notes for next person:**
+- Hotfix is **per workstation** (patches `/program/rescale-ai-*` on that box). New WS → re-run the one-liner.
+- WS must see `storage_wtaTdb` (same shared HPS).
+- When prod tile moves past 2.1.12 with the mesh-only Inference fix, the bash drop-in can be retired.
 
 ---
 
@@ -165,7 +213,8 @@ End-to-end AI Physics workflow for McLaren P35 side-pole crash FEA:
 - **Workaround (what we did):** copied a working `case_data.yml` (from `cases/case16_SbCgV/case_data.yml`) into `versions/0/artifacts/example_training_case/case_data.yml`, then inference can proceed.
 - **Alternative fix:** make the UI upload/generate `case_data.yml` (from sliders + required `timeseries:` keys) or copy it alongside the mesh when building the request temp folder.
 - **User confusion (justified):** "I see the yml is literally the whole list of inputs... I thought I was making those inputs by toggling the knobs and hitting run... wtf?"
-- **Verdict:** Inference UI is **fundamentally broken** for models with global features. The UI shows input controls but they don't actually do anything. UI and backend are not connected.
+- **Verdict (Sep):** Inference UI is **fundamentally broken** for models with global features. The UI shows input controls but they don't actually do anything. UI and backend are not connected.
+- **Oct 27 addendum (Roberto / prod 2.1.12):** Same `case_data.yml` / `outvar_ts_keys` error on customer Side Pole model. Deeper cut: Inference runner still uses the train datapipe path that requires timeseries YAML even for mesh+knob Inference. **Mesh-only customer unblock:** HPS `wtaTdb` bash hotfix (see **Customer Inference — Roberto (Oct 27)** above). Does not fix probe Inference UI or make sliders fully honest on this tile.
 
 **Where `case_data.yml` actually comes from (for the record — not a user error):**
 - Pipeline is `collect_cases → initialize_dataset(dataset_type="fea-deform") → validate_dataset`
@@ -202,9 +251,10 @@ End-to-end AI Physics workflow for McLaren P35 side-pole crash FEA:
    - UI shows sliders for global input features (knobs) but values are never sent to backend
    - Backend expects file-based `case_data.yml` with global inputs + output channel names
    - Decimation doesn't copy `case_data.yml` from raw cases to preprocessed directory
-   - Result: **inference completely non-functional via UI-only path** for GeoTransolver/models with global features
+   - Result: **inference completely non-functional via UI-only path** for GeoTransolver/models with global features (until tile ships fix)
    - User quote: "I see the yml is literally the whole list of inputs... I thought I was making those inputs by toggling the knobs and hitting run... wtf?"
-   - **Fix:** Either (a) have decimation copy `case_data.yml` to preprocessed dir, OR (b) inference UI needs to generate `case_data.yml` from slider values before submitting job
+   - **Fix (product):** empty `outvar_ts_keys` / mesh-only Inference path on tile + slider → backend (or generate `case_data.yml`). Decimation should also copy sibling YAML.
+   - **Fix (customer, Oct 27):** `wtaTdb` mesh hotfix one-liner — see Customer Inference section
 
 2. **504 on long operations misleads users into thinking job failed**  
    - Decimation, metrics postprocess can run 5–10+ min; nginx times out at ~60s
@@ -296,30 +346,32 @@ End-to-end AI Physics workflow for McLaren P35 side-pole crash FEA:
 **Eval:** 14 train + 1 val + 2 test; displacement + global JSON files present  
 **Holdouts:** `case3_dWNQX` (cavity_foam 60 / door_inner 1.2), `case9_KwXUX` (door_inner 1.3)
 
-**Next steps (user's homework):**
+**Next steps (historical Sep walkthrough):**
 - Try inference again on Grossular (now that `case_data.yml` is manually copied to preprocessed dirs)
 - Verify global TS plots render correctly in inference output
 - Compare holdout probe curves (eval vs inference) for sanity
 
-**SSH fix applied (Thu 9:00 AM):**
+**SSH fix applied (Thu 9:00 AM, internal walkthrough WS):**
 - Manually copied `case_data.yml` from raw cases to preprocessed directories:
   - `case3_dWNQX`: `airbag_E22=0.0`, `cavity_foam_gl=60.0`, `door_inner_mm=1.2`
   - `case9_KwXUX`: `cavity_foam_gl=0.0`, `door_inner_mm=1.3`
 - This unblocks inference but proves UI path is broken (sliders don't work)
 
+**Customer path (Oct 27):** prefer the `wtaTdb` mesh-inference hotfix one-liner (not manual YAML copy) for Roberto / new Grossular boxes on prod 2.1.12.
+
 ---
 
 ## Bottom line for exec summary
 
-**UI-only workflow is possible but fragile.** A determined user with SSH access and internal tile knowledge can complete train → eval → inference, but a **customer would hit 5+ blocking errors**:
-1. Inference sliders don't work (frontend/backend disconnected)
-2. 504 timeouts (looks like failure, actually success)
-3. License rejection (no self-serve fix)
-4. Wrong decimation defaults (trains on 200k pts → OOM or slow)
-5. Inference CUDA error (no hardware selector)
+**UI-only workflow is possible but fragile.** Train/eval work on prod after Guangchen’s train hotfix. Mesh Inference on Side Pole works after a **per-WS** bash hotfix on shared HPS `wtaTdb`. A customer without that note still hits the `case_data.yml` error. Remaining sharp edges:
+1. Mesh Inference needs hotfix until the tile ships the empty-`outvar_ts_keys` fix (probe Inference still needs more)
+2. Inference sliders / probe path still incomplete on this tile
+3. 504 timeouts (looks like failure, actually success)
+4. License rejection (no self-serve fix)
+5. Wrong decimation defaults (trains on 200k pts → OOM or slow)
 
 **Short-term fix priority:**
-1. **Inference slider → backend plumbing** (unblocks inference completely) OR decimation copies `case_data.yml`
+1. **Ship mesh-only Inference fix on prod tile** (retire WS hotfix) + probe Inference / slider plumbing
 2. 504 → progress UI or 202 + poll (unblocks decimation confusion)
 3. License check upfront (unblocks dev tile submissions)
 4. Decimation preset for training (prevents bad defaults)

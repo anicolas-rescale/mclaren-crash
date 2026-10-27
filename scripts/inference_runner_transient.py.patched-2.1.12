@@ -1,0 +1,371 @@
+# PATCHED for McLaren Side-Pole mesh inference on rescale-ai 2.1.12
+# Source: v2.1.12 + outvar_ts_keys=[] + tuple unpack (mclaren-mesh-hotfix)
+# Do not use on tiles that already include PR #1423.
+from __future__ import annotations
+
+import csv
+import shutil
+import tempfile
+import threading
+from collections.abc import Callable
+from pathlib import Path
+from typing import TYPE_CHECKING, Any, cast
+
+import numpy as np
+from omegaconf import open_dict
+
+from rescale_ai.models.model_version import apply_dataset_reference_config
+from rescale_ai.models.transient_model import TransientModel
+
+from .mesh_io import load_inference_surface_mesh
+
+if TYPE_CHECKING:
+    import pyvista as pv
+    from omegaconf import DictConfig
+
+    from rescale_ai.models.model_version import ModelVersion
+
+
+_MODEL_CACHE: dict[str, tuple[tuple[int, int], dict[str, object]]] = {}
+_MODEL_CACHE_LOCK = threading.Lock()
+_MODEL_LOAD_LOCKS: dict[str, threading.Lock] = {}
+# Hydra composition (_compose_params_config) clears and re-initializes the
+# process-wide GlobalHydra singleton, so concurrent composition corrupts each
+# other's config context. Serialize it across all versions.
+_HYDRA_COMPOSE_LOCK = threading.Lock()
+_MODEL_CACHE_MAX_ENTRIES = 2
+_MODEL_LOCK_TYPE = type(threading.Lock())
+
+
+def _checkpoint_signature(checkpoint_path: Path) -> tuple[int, int]:
+    if checkpoint_path.is_file():
+        stat = checkpoint_path.stat()
+        return stat.st_mtime_ns, stat.st_size
+
+    if not checkpoint_path.exists():
+        raise FileNotFoundError(
+            f"Transient checkpoint path not found: {checkpoint_path}"
+        )
+
+    latest_mtime = 0
+    total_size = 0
+    for file_path in checkpoint_path.rglob("*"):
+        if not file_path.is_file():
+            continue
+        stat = file_path.stat()
+        latest_mtime = max(latest_mtime, stat.st_mtime_ns)
+        total_size += stat.st_size
+    if latest_mtime == 0:
+        raise FileNotFoundError(
+            f"Transient checkpoint directory contains no files: {checkpoint_path}"
+        )
+    return latest_mtime, total_size
+
+
+def _load_transient_cfg(model_version: "ModelVersion") -> "DictConfig":
+    version_dir = Path(model_version.versionPath).resolve()
+    params_dir = version_dir / "params"
+    if not params_dir.exists():
+        raise RuntimeError(
+            "Transient on-demand inference requires a trained Transient model "
+            f"version with a params/ directory. Missing: {params_dir}"
+        )
+
+    cfg = TransientModel._compose_params_config(params_dir)
+    apply_dataset_reference_config(cfg, model_version.trainingConfig)
+
+    with open_dict(cfg):
+        cfg.model_dir = str(version_dir)
+    return cfg
+
+
+def _build_inference_context(model_version: "ModelVersion") -> dict[str, object]:
+    import torch
+    from hydra.utils import instantiate
+    from physicsnemo.utils import load_checkpoint
+
+    cache_key = str(Path(model_version.versionPath).resolve())
+
+    def fresh_cached_context() -> dict[str, object] | None:
+        # Validate a cache entry without recomposing Hydra: read the checkpoint
+        # path off the cached cfg. The checkpoint stat (a possibly slow rglob)
+        # runs outside _MODEL_CACHE_LOCK, so only quick dict access is locked.
+        with _MODEL_CACHE_LOCK:
+            cached = _MODEL_CACHE.get(cache_key)
+        if cached is None:
+            return None
+        cached_signature, cached_context = cached
+        cached_cfg = cast(Any, cached_context["cfg"])
+        cached_checkpoint = Path(str(cached_cfg.training.ckpt_path)).resolve()
+        if cached_signature == _checkpoint_signature(cached_checkpoint):
+            return dict(cached_context)
+        return None
+
+    fresh = fresh_cached_context()
+    if fresh is not None:
+        return fresh
+
+    with _MODEL_CACHE_LOCK:
+        load_lock = _MODEL_LOAD_LOCKS.setdefault(cache_key, threading.Lock())
+
+    with load_lock:
+        # Another request may have populated the cache while we waited.
+        fresh = fresh_cached_context()
+        if fresh is not None:
+            return fresh
+
+        # Cache miss: compose the config (serialized on the process-wide
+        # GlobalHydra) and load the checkpoint.
+        with _HYDRA_COMPOSE_LOCK:
+            cfg = _load_transient_cfg(model_version)
+        checkpoint_path = Path(str(cfg.training.ckpt_path)).resolve()
+        checkpoint_signature = _checkpoint_signature(checkpoint_path)
+
+        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        model = instantiate(cfg.model)
+        model.to(device)
+        model.eval()
+        load_checkpoint(str(checkpoint_path), models=model, device=device)
+
+        context: dict[str, object] = {
+            "cfg": cfg,
+            "device": device,
+            "model": model,
+            "model_lock": threading.Lock(),
+        }
+        with _MODEL_CACHE_LOCK:
+            _MODEL_CACHE[cache_key] = (checkpoint_signature, context)
+            while len(_MODEL_CACHE) > _MODEL_CACHE_MAX_ENTRIES:
+                del _MODEL_CACHE[next(iter(_MODEL_CACHE))]
+    return dict(context)
+
+
+def _displacement_array_names(mesh: "pv.PolyData") -> list[str]:
+    import re
+
+    def natural_key(name: str) -> list[int | str]:
+        return [
+            int(token) if token.isdigit() else token.lower()
+            for token in re.findall(r"\d+|\D+", name)
+        ]
+
+    return sorted(
+        [
+            str(name)
+            for name in mesh.point_data.keys()
+            if str(name).startswith("displacement_t")
+            and not str(name).endswith("_pred")
+        ],
+        key=natural_key,
+    )
+
+
+def _ensure_displacement_arrays(
+    mesh: "pv.PolyData",
+    *,
+    num_time_steps: int,
+) -> tuple["pv.PolyData", bool]:
+    displacement_names = _displacement_array_names(mesh)
+    if len(displacement_names) == num_time_steps:
+        return mesh, False
+
+    prepared_mesh = mesh.copy(deep=True)
+    for stale_name in displacement_names:
+        del prepared_mesh.point_data[stale_name]
+    zero_displacement = np.zeros((prepared_mesh.n_points, 3), dtype=np.float32)
+    denominator = max(num_time_steps - 1, 1)
+    for timestep_index in range(num_time_steps):
+        time_value = timestep_index / denominator
+        prepared_mesh.point_data[f"displacement_t{time_value:.3f}"] = zero_displacement
+    return prepared_mesh, True
+
+
+def _write_case_csv(
+    csv_path: Path,
+    *,
+    case_path: Path,
+    global_feature_names: list[str],
+    parameters: dict[str, Any],
+) -> None:
+    missing_features = [
+        feature_name
+        for feature_name in global_feature_names
+        if feature_name not in parameters
+    ]
+    if missing_features:
+        raise ValueError(
+            "Transient inference requires values for global input variables: "
+            + ", ".join(missing_features)
+        )
+
+    fieldnames = ["case_path", *global_feature_names]
+    with csv_path.open("w", encoding="utf-8", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerow(
+            {
+                "case_path": str(case_path),
+                **{
+                    feature_name: parameters[feature_name]
+                    for feature_name in global_feature_names
+                },
+            }
+        )
+
+
+def _add_displacement_magnitude_arrays(mesh: "pv.PolyData") -> None:
+    for array_name in list(mesh.point_data.keys()):
+        array_name_str = str(array_name)
+        if not (
+            array_name_str.startswith("displacement_t")
+            and array_name_str.endswith("_pred")
+        ):
+            continue
+
+        values = np.asarray(mesh.point_data[array_name_str])
+        if values.ndim != 2 or values.shape[1] != 3:
+            continue
+        magnitude_name = array_name_str.replace(
+            "displacement_t",
+            "displacement_magnitude_t",
+            1,
+        )
+        mesh.point_data[magnitude_name] = np.linalg.norm(values, axis=1).astype(
+            np.float32
+        )
+
+
+def run_inference_on_demand(
+    model_version: "ModelVersion",
+    parameters: dict[str, Any],
+    mesh_or_path: "Path | pv.PolyData",
+    mesh_version_callback: Callable[[str, "pv.PolyData"], None] | None = None,
+) -> tuple["pv.PolyData", dict[str, object]]:
+    import torch
+    from hydra.utils import instantiate
+    from torch.utils.data import DataLoader
+
+    from rescale_ai.solver.transient.datapipe import simsample_collate
+    from rescale_ai.solver.transient.inference import (
+        denormalize_positions,
+        save_transient_deform_prediction_vtp,
+    )
+
+    prepared_mesh = load_inference_surface_mesh(
+        mesh_or_path,
+        allowed_path_suffixes=(".vtp", ".vtm"),
+    ).mesh
+    context = _build_inference_context(model_version)
+    cfg = cast(Any, context["cfg"])
+    num_time_steps = int(cfg.training.num_time_steps)
+    prepared_mesh, generated_displacement_arrays = _ensure_displacement_arrays(
+        prepared_mesh,
+        num_time_steps=num_time_steps,
+    )
+    if mesh_version_callback is not None:
+        mesh_version_callback("post_prepare_transient_surface_mesh", prepared_mesh)
+
+    work_dir = Path(tempfile.mkdtemp(prefix="transient_inference_"))
+    try:
+        case_dir = work_dir / "case"
+        case_dir.mkdir(parents=True)
+        case_vtp_path = case_dir / "case.vtp"
+        prepared_mesh.save(str(case_vtp_path), binary=True)
+
+        global_feature_names = list(cfg.datapipe.get("global_features") or [])
+        case_csv_path = work_dir / "case.csv"
+        _write_case_csv(
+            case_csv_path,
+            case_path=case_dir,
+            global_feature_names=global_feature_names,
+            parameters=parameters,
+        )
+
+        reader = instantiate(cfg.reader)
+        dataset = instantiate(
+            cfg.datapipe,
+            name="transient_inference",
+            reader=reader,
+            split="validation",
+            num_steps=num_time_steps,
+            num_samples=1,
+            data_dir=None,
+            cases_csv_path=str(case_csv_path),
+            sample_type="all_time_steps",
+            dynamic_targets=[],
+            outvar_ts_keys=[],  # mclaren-mesh-hotfix:skip-gt-probes
+        )
+        device = context["device"]
+        if not isinstance(device, torch.device):
+            raise RuntimeError("Transient inference device is unavailable.")
+
+        data_stats = dict(
+            node={key: value.to(device) for key, value in dataset.node_stats.items()},
+            edge={
+                key: value.to(device)
+                for key, value in getattr(dataset, "edge_stats", {}).items()
+            },
+            feature={
+                key: value.to(device)
+                for key, value in getattr(dataset, "feature_stats", {}).items()
+            },
+        )
+        dataloader = DataLoader(
+            dataset,
+            batch_size=1,
+            shuffle=False,
+            drop_last=False,
+            pin_memory=True,
+            num_workers=0,
+            collate_fn=simsample_collate,
+        )
+
+        model_lock = context["model_lock"]
+        if not isinstance(model_lock, _MODEL_LOCK_TYPE):
+            raise RuntimeError("Transient inference model lock is unavailable.")
+        model = cast(Any, context["model"])
+
+        pos_mean = data_stats["node"]["pos_mean"]
+        pos_std = data_stats["node"]["pos_std"]
+        pred_pos_denorm = None
+        with model_lock, torch.no_grad():
+            for sample in dataloader:
+                if isinstance(sample, list):
+                    sample = sample[0]
+                sample = sample.to(device)
+                pred = model(sample=sample, data_stats=data_stats)
+                if isinstance(pred, tuple):  # mclaren-mesh-hotfix:unpack
+                    pred, _global_pred = pred
+                pred_pos = pred[:, :, :3].transpose(0, 1)
+                pred_pos_denorm = [
+                    denormalize_positions(pred_pos[timestep_index], pos_mean, pos_std)
+                    for timestep_index in range(pred_pos.size(0))
+                ]
+                break
+
+        if pred_pos_denorm is None:
+            raise RuntimeError("Transient inference produced no samples.")
+
+        output_vtp_path = work_dir / "prediction.vtp"
+        save_transient_deform_prediction_vtp(
+            original_vtp_path=str(case_vtp_path),
+            pred_positions=pred_pos_denorm,
+            out_vtp_path=str(output_vtp_path),
+            displacement_prefix="displacement_t",
+        )
+        if not output_vtp_path.exists():
+            raise RuntimeError("Transient inference did not write a prediction VTP.")
+
+        output_mesh = load_inference_surface_mesh(output_vtp_path).mesh
+        _add_displacement_magnitude_arrays(output_mesh)
+        return output_mesh, {
+            "architecture": "Transient",
+            "num_time_steps": num_time_steps,
+            "generated_displacement_arrays": generated_displacement_arrays,
+            "global_inputs": {
+                feature_name: parameters[feature_name]
+                for feature_name in global_feature_names
+            },
+        }
+    finally:
+        shutil.rmtree(work_dir, ignore_errors=True)
